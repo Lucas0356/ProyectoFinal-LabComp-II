@@ -1,20 +1,12 @@
+/* ESTILOS DE BARRA DE NAVEGACIÓN */
+
+/* ESTILOS BODY */
+
 body{
     background-color: rgb(206, 206, 206);
 }
 
-ul{
-    display: flex;
-    flex-direction: column;
-}
-
-li{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
+/* ESTILOS contenidoPrincipal */
 
 .widget{
     background-color: white;
@@ -45,16 +37,34 @@ a{
     align-content: baseline;
 }
 
+.porcentaje_div:nth-child(2){
+    font-size: 1px;
+}
+
 #first_box{
     display: flex;
     flex-direction: row;
+}
+
+/* ESTILOS DEL SIDEBAR */
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 a > span{
     margin-right: 15px;
 }
 
-.porcentaje_div:nth-child(2){
-    font-size: 1px;
-    
-}
+/* ESTILOS DEL FOOTER */
+

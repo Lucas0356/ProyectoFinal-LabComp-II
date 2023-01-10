@@ -3,3 +3,16 @@
 Autores: Lucas Moltedo - Martín Reser
 
 ***********************************************/
+
+/* IMPORTAMOS UNA FUENTE */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mende+Kikakui&display=swap');
+
+/* ESTILOS GENERALES*/ 
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans Mende Kikakui', sans-serif;
+}
