@@ -6,17 +6,27 @@ body{
     background-color: rgb(206, 206, 206);
 }
 
-/* ESTILOS contenidoPrincipal */
+/* ESTILOS MAIN */
 
-.widget{
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.plantilla-widget {
     background-color: white;
+    text-align: center;
     width: 200px;
     height: 150px;
-    border-radius: 5%;
+    margin: 15px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 10px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.grafico {
+    width: 30%
 }
 
 .cantidad{
@@ -41,10 +51,6 @@ body{
     font-size: 1px;
 }
 
-#first_box{
-    display: flex;
-    flex-direction: row;
-}
 
 /* ESTILOS DEL SIDEBAR */
 

@@ -8,8 +8,8 @@
     </head>
 
     <body>
-        <div id="contenedor">
-            <div id="barraIzq">
+        <div id="contenedor_general">
+            <header>
                 <nav>
                     <h1>Molt Store</h1>
                     <ul>
@@ -36,9 +36,10 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
-            <div id="contenidoPrincipal">
-                <div id="first_box">
+            </header>
+
+            <main>
+                <div class="plantilla-widget">
                     <div id="ingresos" class="widget">
                         <h2>Ingresos</h2>
                         <p class="cantidad">442.000</p>
@@ -47,6 +48,9 @@
                             <p>Desde el último mes</p>
                         </div>
                     </div>
+                </div>
+            
+                <div class="plantilla-widget">
                     <div id="egresos" class="widget">
                         <h2>Egresos</h2>
                         <p class="cantidad">157.000</p>
@@ -55,6 +59,9 @@
                             <p>Desde el último mes</p>
                         </div>
                     </div>
+                </div>
+
+                <div class="plantilla-widget">
                     <div id="ventas" class="widget">
                         <h2>Ventas</h2>
                         <p class="cantidad">1.400</p>
@@ -63,21 +70,32 @@
                             <p>Desde el último mes</p>
                         </div> 
                     </div>
+                </div>
+
+                <div class="plantilla-widget">
                     <div id="ventas30">
                         <h5>Ventas en los últimos 30 días</h5>
                         <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
-                        <img src="#">
+                        <img src="img/ventas30.png" class="grafico">
                     </div>
+                </div>
+
+                <div class="plantilla-widget">
                     <div id="eCommerce">
                         <h5>Personas que visitaron tu e-Commerce</h5>
                         <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
-                        <img src="#">
+                        <img src="img/ventas30.png" class="grafico">
                     </div>
                 </div>
-                <div id="stockProductos">
-                    <h4> Stock de Productos</h4>
+
+                <div class="plantilla-widget">
+                    <div id="stockProductos">
+                        <h4> Stock de Productos</h4>
+                    </div>
                 </div>
-            </div>
+
+            </main>
+
             <div id="barraDer">
                 <div id="ultVentas">
                     <h4> Últimas Ventas</h4>
