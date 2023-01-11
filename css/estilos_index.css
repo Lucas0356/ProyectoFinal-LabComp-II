@@ -1,5 +1,14 @@
 /* ESTILOS DE BARRA DE NAVEGACIÓN */
 
+nav {
+    background-color: rgb(255, 158, 119);
+    width: 100%;
+    position: fixed;
+    border-bottom: 2px solid rgb(42, 0, 0);
+    z-index: 1;
+}
+
+
 /* ESTILOS BODY */
 
 body{
@@ -9,6 +18,14 @@ body{
 /* ESTILOS MAIN */
 
 main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+#content {
+    margin-top: 2%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -54,13 +71,22 @@ main {
 
 /* ESTILOS DEL SIDEBAR */
 
-ul{
+#sidebar {
+    position: fixed;  /*posición fija */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    background-color: rgb(255, 158, 119);
+    width: 25%;
+    margin-top: 2%;
+    height: 98%;
 }
 
-li{
+#sidebar ul li {
+    padding: 15px 10px;
+    border-bottom: 1px solid rgb(124, 124, 124);
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
 }
 
 a{
