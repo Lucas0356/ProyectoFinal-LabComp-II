@@ -1,183 +1,164 @@
 <!DOCTYPE html>
 <html >
     <head>
-        <meta charset="UTF-8">
         <title>Molt Store - Admin</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="css/estilos_generales.css">
         <link rel="stylesheet" href="css/estilos_index.css">
-        <link rel="stylesheet" href="css/estilos_perfil.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
 
     <body>
+        <!-- Encabezado -->
+        <header>
+            <div class="sidebar-button"> <!-- Boton sidebar -->
+                <span class="material-symbols-outlined"> menu </span>  <!-- Importamos el ícono -->
+            </div>
+            <h1>Molt Store</h1>
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Usuario</a>
+                <a href="#">Opciones</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
 
-        <!-- Menú despegable (sidebar) -->
-        <div id="contenedor_general">
-            <header>
-                <div id="header-content">
-                    <div class="sidebar-botton">
-                        <label for="sidebar-botton">
-                            <span class="material-symbols-outlined">
-                                menu
-                            </span>
-                        </label>
+        <!-- Barra lateral -->
+        <div id="sidebar">
+            <ul> <!-- Menú de la barra lateral -->
+                <li>
+                    <a href="#"><span class="material-symbols-outlined">dashboard</span> Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><span class="material-symbols-outlined">inventory</span> Stock de Productos</a>
+                </li>
+                <li>
+                    <a href="#"><span class="material-symbols-outlined">sell</span> Ventas</a>
+                </li>
+                <li>
+                    <a href="#"><span class="material-symbols-outlined">paid</span> Ganancias</a>
+                </li>
+                <li>
+                    <a href="#"><span class="material-symbols-outlined">payments</span> Gastos</a>
+                </li>
+                <li>                            
+                    <a href="#"><span class="material-symbols-outlined">badge</span> Empleados</a>
+                </li>
+                <li>
+                    <a href="#"> <span class="material-symbols-outlined">local_shipping</span> Proveedores</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contenido principal -->
+        <section id="content">
+            <div class="plantilla-widget"> <!-- Plantillas de los widgets -->
+            <div id="ingresos" class="widget">
+                <h2>Ingresos</h2>
+                    <p class="cantidad">442.000</p>
+                    <div class="porcentaje_div">                       
+                        <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
+                        <p>Desde el último mes</p>
                     </div>
-                    <h1>Molt Store</h1>
-                    <nav class="menu">
-                        <a href="#">Inicio</a>
-                        <a href="#">Usuario</a>
-                        <a href="#">Opciones</a>
-                        <a href="#">Contacto</a>
-                    </nav>
-                </div>
-            </header>
-            <div class="capa"></div>
-
-            <!-- Activador de la sidebar -->
-            <input type="checkbox" id="sidebar-botton">
-
-            <!-- Contenido de la sidebar -->
-            <div class="sidebar">
-                <div class="cont-sidebar">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#"><span class="material-symbols-outlined">dashboard</span>Dashboard</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-symbols-outlined">inventory</span>Stock de Productos</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-symbols-outlined">sell</span>Ventas</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-symbols-outlined">paid</span>Ganancias</a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="material-symbols-outlined">payments</span>Gastos</a>
-                            </li>
-                            <li>                            
-                                <a href="#"><span class="material-symbols-outlined">badge</span>Empleados</a>
-                            </li>
-                            <li>
-                                <a href="#"> <span class="material-symbols-outlined">local_shipping</span>Proveedores</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <label for="btn-menu">✖️</label>
                 </div>
             </div>
 
-
-            <!-- Contenido principal -->
-            <main>
-                <section id="content">
-                    <div class="plantilla-widget">
-                        <div id="ingresos" class="widget">
-                            <h2>Ingresos</h2>
-                            <p class="cantidad">442.000</p>
-                            <div class="porcentaje_div">                       
-                                <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
-                                <p>Desde el último mes</p>
-                            </div>
-                        </div>
+            <div class="plantilla-widget">
+                <div id="egresos" class="widget">
+                    <h2>Egresos</h2>
+                    <p class="cantidad">157.000</p>
+                    <div class="porcentaje_div">                       
+                        <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
+                        <p>Desde el último mes</p>
                     </div>
-                
-                    <div class="plantilla-widget">
-                        <div id="egresos" class="widget">
-                            <h2>Egresos</h2>
-                            <p class="cantidad">157.000</p>
-                            <div class="porcentaje_div">                       
-                                <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
-                                <p>Desde el último mes</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="plantilla-widget">
-                        <div id="ventas" class="widget">
-                            <h2>Ventas</h2>
-                            <p class="cantidad">1.400</p>
-                            <div class="porcentaje_div">                       
-                                <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
-                                <p>Desde el último mes</p>
-                            </div> 
-                        </div>
-                    </div>
-
-                    <div class="plantilla-widget">
-                        <div id="ventas30">
-                            <h5>Ventas en los últimos 30 días</h5>
-                            <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
-                            <img src="img/ventas30.png" class="grafico">
-                        </div>
-                    </div>
-
-                    <div class="plantilla-widget">
-                        <div id="eCommerce">
-                            <h5>Personas que visitaron tu e-Commerce</h5>
-                            <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
-                            <img src="img/ventas30.png" class="grafico">
-                        </div>
-                    </div>
-
-                    <div class="plantilla-widget">
-                        <div id="stockProductos">
-                            <h4> Stock de Productos</h4>
-                        </div>
-                    </div>
-                </section>
-
-            </main>
-
-            <div id="barraDer">
-                <div id="ultVentas">
-                    <h4> Últimas Ventas</h4>
-                    <ul>
-                        <li>
-                            <img src="#">
-                            <h5> Nike Air Force 1</h5>
-                            <p> $250</p>
-                        </li>
-                        <li>
-                            <img src="#">
-                            <h5> Vans Old School</h5>
-                            <p> $350</p>
-                        </li>
-                        <li><img src="#">
-                            <h5> Adidas Yeezy</h5>
-                            <p> $850</p></li>
-                        <li>
-                            <img src="#">
-                            <h5> New Balance 500</h5>
-                            <p> $150</p>
-                        </li>
-                    </ul>
                 </div>
-                <div id="empleados">
-                    <h4> Empleados </h4>
-                    <ul>
-                        <li>
-                            <img src="#">
-                            <h5> Empleado 1</h5>
-                            <p> Salario: $95.000</p>
-                        </li>
-                        <li>
-                            <img src="#">
-                            <h5> Empleado 2</h5>
-                            <p> Salario: $95.000</p>
-                        </li>
-                        <li><img src="#">
-                            <h5> Empleado 3</h5>
-                            <p> Salario: $95.000</p></li>
-                        <li>
-                            <img src="#">
-                            <h5> Supervisor</h5>
-                            <p> Salario: $150.000</p>
-                        </li>
-                    </ul>
+            </div>
+
+            <div class="plantilla-widget">
+                <div id="ventas" class="widget">
+                    <h2>Ventas</h2>
+                    <p class="cantidad">1.400</p>
+                    <div class="porcentaje_div">                       
+                        <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
+                        <p>Desde el último mes</p>
+                    </div> 
                 </div>
+            </div>
+
+            <div class="plantilla-widget">
+                <div id="ventas30">
+                    <h5>Ventas en los últimos 30 días</h5>
+                    <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
+                    <img src="img/ventas30.png" class="grafico">
+                </div>
+            </div>
+
+            <div class="plantilla-widget">
+                <div id="eCommerce">
+                    <h5>Personas que visitaron tu e-Commerce</h5>
+                    <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
+                    <img src="img/ventas30.png" class="grafico">
+                </div>
+            </div>
+
+            <div class="plantilla-widget">
+                <div id="stockProductos">
+                    <h4> Stock de Productos</h4>
+                </div>
+            </div>
+        </section>
+        </main>
+
+        <!-- Contenido extra -->
+        <div id="barraDer">
+            <div id="ultVentas">
+                <h4> Últimas Ventas</h4>
+                <ul>
+                    <li>
+                        <img src="#">
+                        <h5> Nike Air Force 1</h5>
+                        <p> $250</p>
+                    </li>
+                    <li>
+                        <img src="#">
+                        <h5> Vans Old School</h5>
+                        <p> $350</p>
+                    </li>
+                    <li><img src="#">
+                        <h5> Adidas Yeezy</h5>
+                        <p> $850</p></li>
+                    <li>
+                        <img src="#">
+                        <h5> New Balance 500</h5>
+                        <p> $150</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="empleados">
+                <h4> Empleados </h4>
+                <ul>
+                    <li>
+                        <img src="#">
+                        <h5> Empleado 1</h5>
+                        <p> Salario: $95.000</p>
+                    </li>
+                    <li>
+                        <img src="#">
+                        <h5> Empleado 2</h5>
+                        <p> Salario: $95.000</p>
+                    </li>
+                    <li><img src="#">
+                        <h5> Empleado 3</h5>
+                        <p> Salario: $95.000</p></li>
+                    <li>
+                        <img src="#">
+                        <h5> Supervisor</h5>
+                        <p> Salario: $150.000</p>
+                    </li>
+                </ul>
             </div>
         </div>
+
+        <script src="js/index.js" charset="UTF-8"></script>
     </body>
 </html>

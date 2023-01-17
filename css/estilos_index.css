@@ -1,114 +1,103 @@
-/* ####################################################################################################### */
+/***********************************************
+
+Autores: Lucas Moltedo - Martín Reser
+
+***********************************************/
 
 /*ESTILOS PARA EL ENCABEZADO */
 
 header{
     width: 100%;
     height: 100px;
-    position: fixed;
-    top: 0;left: 0;
     background-color: #273b55;
 }
 
-#header-content{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-#header-content h1{
-    float: left;
-    line-height:100px;
-    font-weight: 400;
+header h1 {
+    float: left; /* Colocamos el logo a la izquierda*/
+    line-height: 100px;
+    font-weight: 400px;
     font-size: 22px;
-    margin-left: 10px;
+    margin-left: 50px;
     color: #eb4c49;
 }
 
-#header-content .sidebar-botton label{
-    color: #ffe9c2;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-#header-content .menu{
-    float: right;
+nav.menu {
+    float: right;  /* Colocamos el menu nav a la derecha */
     line-height: 100px;
 }
 
-#header-content .menu a{
-    display: inline-block;
-    padding: 15px;
-    line-height: normal;
+nav.menu a{
+    color: #ffffff;
     text-decoration: none;
-    color: #ffe9c2;
-    transition: all 0.3s;
-    border-bottom: 2px solid transparent;
-    font-size: 15px;
+    border-left: 2px solid #ffffff; /* Agregamos separaciones al menú */
+    padding: 15px;
     margin-right: 5px;
 }
 
-#header-content .menu a:hover{
+nav.menu a:nth-child(1){
+    border-left: none; /* Borramos la separación del primer elemento */
+}
+
+nav.menu a:hover{
+    color: #2f2e2e;
     background-color: #eb4c49;
-    transition: 0.3s ease;
-    padding: 8px;
+    transition: 0.5s ease;
 }
 
 /* ####################################################################################################### */
-/* Estilos menú sidebar */
 
-#sidebar-botton{
-    display: none;
+/*ESTILOS PARA LA BARRA LATERAL */
+
+#sidebar {
+    position: fixed; /* Posición fija */
+    width: 200px; /* Ancho */
+    height: 100%; /* Altura */
+    background-color: #273b55;
+    left: -200px; /* Debido a que el ancho es de 200, con esto ocultaremos la barra lateral */
+    transition: all 500ms linear;
 }
-.sidebar{
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100vh;
-    top: 0;left: 0;
-    transition: all 500ms ease;
-    opacity: 0;
+
+#sidebar.active {
+    left: 0; /* Damos visualización a la barra lateral */
 }
-.cont-sidebar{
-    width: 100%;
-    max-width: 250px;
-    background: #1c1c1c;
-    height: 100vh;
-    position: relative;
-    transition: all 500ms ease;
-    transform: translateX(-100%);
+
+#sidebar ul li {
+    text-align: left; /* Elementos tirados a la izquierda */
+    padding: 15px 10px; /* Espaciado, 15 arriba y abajo, 10 a los lados */
+    border-bottom: 1px solid #eb4c49;
+    list-style: none; /* Listas sin diseño */
 }
-#sidebar-botton:checked ~ .sidebar .cont-sidebar{
-    transform: translateX(0%);
-}
-.cont-sidebar nav{
-    transform: translateY(15%);
-}
-.cont-sidebar nav a{
-    display: block;
+
+#sidebar ul li a{
     text-decoration: none;
-    padding: 20px;
-    color: #c7c7c7;
-    border-left: 5px solid transparent;
-    transition: all 400ms ease;
+    color: #ffffff;
 }
-.cont-sidebar nav a:hover{
-    border-left: 5px solid #c7c7c7;
-    background: #1f1f1f;
-}
-.cont-sidebar label{
-    position: absolute;
-    right: 5px;
-    top: 10px;
-    color: #fff;
+
+div.sidebar-button {
+    position: absolute; /* Se coloca encima de los demás elementos */
+    top: 20px; /* Margen superior */
     cursor: pointer;
-    font-size: 18px;
 }
+
+div.sidebar-button span {
+    display: block; /* Comportamiento en bloque */
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    background-color: #eb4c49;
+    border: 2px solid #000000;
+}
+
+/* ####################################################################################################### */
 
 /* ESTILOS BODY */
 
 body{
     background-color: #2f2e2e;
 }
+
+/* ####################################################################################################### */
 
 /* ESTILOS MAIN */
 
@@ -160,16 +149,4 @@ main {
 
 .porcentaje_div:nth-child(2){
     font-size: 1px;
-}
-
-
-/* ESTILOS DEL FOOTER */
-
-.capa{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.6);
-    z-index: -1;
-    top: 0;left: 0;
 }
