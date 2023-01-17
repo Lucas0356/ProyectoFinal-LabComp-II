@@ -16,22 +16,24 @@
                 <span class="material-symbols-outlined"> menu </span>  <!-- Importamos el ícono -->
             </div>
             <h1>Molt Store</h1>
+            <div id="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </div>
             <nav class="menu">
-                <a href="#">
-                    <span class="material-symbols-outlined">
-                    notifications
-                    </span>
-                </a>
-                <a href="#">
-                    <span class="material-symbols-outlined">
-                    mail
-                    </span>
-                </a>
-                <a href="perfil.html">
-                    <span class="material-symbols-outlined">
-                    account_circle
-                    </span>
-                </a>
+                <button class="boton-menu" id="btn-notifications"> 
+                    <span class="material-symbols-outlined">notifications</span>
+                </button>
+                <button class="boton-menu" id="btn-messages"> 
+                    <span class="material-symbols-outlined">mail</span>
+                </button>
+                <button class="boton-menu" id="btn-perfil">
+                    <a href="perfil.html">
+                        <span class="material-symbols-outlined">account_circle</span>
+                    </a>
+                </button>
             </nav>
         </header>
 
@@ -39,7 +41,7 @@
         <div id="sidebar">
             <ul> <!-- Menú de la barra lateral -->
                 <li>
-                    <a href="#"><span class="material-symbols-outlined">dashboard</span> Dashboard</a>
+                    <a href="index.html"><span class="material-symbols-outlined">dashboard</span> Dashboard</a>
                 </li>
                 <li>
                     <a href="#"><span class="material-symbols-outlined">inventory</span> Stock de Productos</a>

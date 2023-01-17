@@ -10,40 +10,67 @@ header{
     width: 100%;
     height: 100px;
     background-color: #273b55;
-    position: fixed;
+    position: fixed; /* Posición fija */
     top: 0%;
+    display: flex;
 }
 
 header h1 {
-    float: left; /* Colocamos el logo a la izquierda*/
+    margin-right: auto;  /* Colocamos el logo a la izquierda */
     line-height: 100px;
-    font-weight: 400px;
     font-size: 22px;
     margin-left: 50px;
     color: #eb4c49;
 }
 
+/* Botones del menú */
+
 nav.menu {
-    float: right;  /* Colocamos el menu nav a la derecha */
+    margin-left: auto;  /* Colocamos los botones a la derecha */
     line-height: 100px;
 }
 
-nav.menu a{
+
+nav.menu button.boton-menu {
+    background-color:  transparent; /* Borramos fondo de los botones */
+    border: 0; /* Quitamos los bordes de los botones */
+    border-left: 1px solid #ffffff; /* Agregamos separadores a los botones con un borde a la izquierda */
+    padding: 15px; /* Relleno de 15px en todas las direcciones */
     color: #ffffff;
-    text-decoration: none;
-    border-left: 2px solid #ffffff; /* Agregamos separaciones al menú */
-    padding: 15px;
+    cursor: pointer;
 }
 
-nav.menu a:nth-child(1){
-    border-left: none; /* Borramos la separación del primer elemento */
+nav.menu button.boton-menu:nth-child(1){
+    border-left: none; /* Borramos el separador primer botón */
 }
 
-nav.menu a:hover{
+nav.menu button.boton-menu:hover {
     color: #2f2e2e;
-    background-color: #eb4c49;
+    background-color: #eb4c49; /* Efecto cambio de color al pasar el cursor */
     transition: 0.5s ease;
 }
+
+nav.menu button.boton-menu a {
+    text-decoration: none;  /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ NO FUNCIONA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}
+
+/* Barra de busqueda */
+
+#search-bar input[type=text] {
+    padding: 6px;
+    border: none;
+    margin-top: 40px;
+    font-size: 17px;
+}
+
+#search-bar span {
+    padding: 6px 10px;
+    background: rgb(255, 255, 255);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* ####################################################################################################### */
 
@@ -90,12 +117,12 @@ nav.menu a:hover{
 
 div.sidebar-button {
     position: absolute; /* Se coloca encima de los demás elementos */
-    top: 20px; /* Margen superior */
+    top: 35px; /* Margin top */
+    margin-left: 5px;
     cursor: pointer;
 }
 
 div.sidebar-button span {
-    display: block; /* Comportamiento en bloque */
     width: 40px;
     text-align: center;
     font-size: 30px;
@@ -109,7 +136,7 @@ div.sidebar-button span {
 /* ESTILOS BODY */
 
 body{
-    background-color: #2f2e2e;
+    background-color: #5f5e5e;
     padding-top: 100px; /* El relleno es igual a la altura del encabezado para que no lo tape */
 }
 
