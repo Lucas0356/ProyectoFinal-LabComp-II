@@ -63,10 +63,10 @@ nav.menu button.boton-menu a {
     font-size: 17px;
 }
 
-#search-bar span {
-    padding: 6px 10px;
+#search-bar button {
+    padding: 6px;
     background: rgb(255, 255, 255);
-    font-size: 17px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
 }
@@ -87,6 +87,7 @@ nav.menu button.boton-menu a {
 
 #sidebar.active {
     left: 0; /* Damos visualización a la barra lateral */
+    
 }
 
 #sidebar ul li {
@@ -126,10 +127,18 @@ div.sidebar-button span {
     width: 40px;
     text-align: center;
     font-size: 30px;
-    color: rgb(0, 0, 0);
+    color: #000000;
     background-color: #eb4c49;
     border: 2px solid #000000;
 }
+
+div.sidebar-button span:hover {
+    color: #273b55;
+    background-color: #fb5350;
+    border: 2px solid #273b55;
+}
+
+
 
 /* ####################################################################################################### */
 
@@ -138,6 +147,7 @@ div.sidebar-button span {
 body{
     background-color: #5f5e5e;
     padding-top: 100px; /* El relleno es igual a la altura del encabezado para que no lo tape */
+    display: flex;
 }
 
 /* ####################################################################################################### */
@@ -198,4 +208,28 @@ main {
 
 .porcentaje_div:nth-child(2){
     font-size: 1px;
+}
+
+/* ####################################################################################################### */
+
+/* ESTILOS ASIDE - BARRA SECUNDARIA */
+
+#barra-secundaria{
+    width: 500px;
+    background-color: #eb4c49;
+    text-align: center;
+}
+
+#barra-secundaria div ul li {
+    list-style: none; /* Listas sin diseño */
+    padding: 20px;
+    margin: auto;
+    background-color: #273b55;
+    color: #ffffff;
+}
+
+#barra-secundaria div ul li img{
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
 }
