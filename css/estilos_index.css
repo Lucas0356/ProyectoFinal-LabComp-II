@@ -11,8 +11,8 @@ header{
     height: 100px;
     background-color: #273b55;
     position: fixed; /* Posición fija */
-    top: 0%;
-    display: flex;
+    top: 0%; /* Sin margen superior */
+    display: flex; 
 }
 
 header h1 {
@@ -217,6 +217,12 @@ main {
 #barra-secundaria{
     background-color: #eb4c49;
     text-align: center;
+    display: flex;
+}
+
+#separador{
+    width: 2px;
+    background-color: #eb4c49;
 }
 
 #barra-secundaria div ul li {
@@ -226,6 +232,7 @@ main {
     background-color: #273b55;
     color: #ffffff;
 }
+
 
 #barra-secundaria div ul li img{
     width: 150px;
