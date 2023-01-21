@@ -92,7 +92,7 @@ nav.menu button.boton-menu a {
 
 #sidebar ul li {
     padding: 15px 10px; /* Espaciado, 15 arriba y abajo, 10 a los lados */
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #476387;
     list-style: none; /* Listas sin diseño */
 }
 
@@ -145,7 +145,7 @@ div.sidebar-button span:hover {
 /* ESTILOS BODY */
 
 body{
-    background-color: #5f5e5e;
+    background-color: #ffffff;
     padding-top: 100px; /* El relleno es igual a la altura del encabezado para que no lo tape */
     display: flex;
 }
@@ -156,26 +156,28 @@ body{
 
 main {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
 }
 
 #content {
-    margin-top: 2%;
+    margin-top: 2px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-content: flex-start;
 }
 
 .plantilla-widget {
-    background-color: white;
+    background-color: #273b55;
     text-align: center;
-    width: 200px;
-    height: 150px;
-    margin: 15px;
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
+    width: 33%;
+    height: 23%;
+    margin: 2px;
+    color: #ffffff;
+}
+
+.plantilla-widget h5 {
+    font-size: 15px;
 }
 
 .grafico {
@@ -185,7 +187,7 @@ main {
 .grafico:hover {
     position: relative; /* Posicion relativa para que se superponga a los demás widgets en caso de ser necesario */
     width: 100%; /* Zoom a los graficos al pasar el mouse */
-    background-color: #ffffff;
+    background-color: #273b55;
 }
 
 .cantidad{
@@ -220,19 +222,17 @@ main {
     display: flex;
 }
 
-#separador{
+#separador{ /* La linea que separa últimas ventas y empleados */
     width: 2px;
-    background-color: #eb4c49;
+    background-color: #476387;
 }
 
 #barra-secundaria div ul li {
     list-style: none; /* Listas sin diseño */
-    padding: 20px;
-    margin: auto;
+    padding: 10px;
     background-color: #273b55;
     color: #ffffff;
 }
-
 
 #barra-secundaria div ul li img{
     width: 150px;
