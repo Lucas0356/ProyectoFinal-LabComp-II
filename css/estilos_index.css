@@ -50,10 +50,6 @@ nav.menu button.boton-menu:hover {
     transition: 0.5s ease;
 }
 
-nav.menu button.boton-menu a {
-    text-decoration: none;  /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ NO FUNCIONA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-}
-
 /* Barra de busqueda */
 
 #search-bar input[type=text] {
@@ -170,7 +166,8 @@ main {
     background-color: #273b55;
     text-align: center;
     justify-content: center;
-    width: 33%;
+    min-width: 300px;
+    width: 30%;
     height: 23%;
     margin: 2px;
     color: #ffffff;
@@ -181,12 +178,12 @@ main {
 }
 
 .grafico {
-    width: 30%
+    width: 30%;
 }
 
 .grafico:hover {
     position: relative; /* Posicion relativa para que se superponga a los demás widgets en caso de ser necesario */
-    width: 100%; /* Zoom a los graficos al pasar el mouse */
+    width: 50%; /* Zoom a los graficos al pasar el mouse */
     background-color: #273b55;
 }
 
