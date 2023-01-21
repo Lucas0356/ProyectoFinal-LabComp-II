@@ -217,9 +217,14 @@ main {
 /* ESTILOS ASIDE - BARRA SECUNDARIA */
 
 #barra-secundaria{
-    background-color: #eb4c49;
+    background-color: #273b55;
     text-align: center;
-    display: flex;
+    display: flex;  /* Hacemos que ult ventas y empleados salgan uno al lado del otro */
+}
+
+#barra-secundaria div h4{
+    background-color: #fb5350;
+    text-transform: uppercase; /* Mayúsculas */
 }
 
 #separador{ /* La linea que separa últimas ventas y empleados */
@@ -230,12 +235,28 @@ main {
 #barra-secundaria div ul li {
     list-style: none; /* Listas sin diseño */
     padding: 10px;
-    background-color: #273b55;
     color: #ffffff;
+    /* Con esto hacemos que se vea de arriba para abajo: foto - nombre - precio */
+}
+
+#barra-secundaria div ul li a p{ /* Botón "ver más" */
+    color: #ffffff;
+    border-top: 2px solid #476387;
+    font-weight: bold; /* Negrita */
+}
+
+#barra-secundaria div ul li a p:hover{
+    background-color: #476387;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 
 #barra-secundaria div ul li img{
     width: 150px;
     height: 150px;
     background-color: #ffffff;
+}
+
+#barra-secundaria div.info-secundaria {
+    width: 100%;
 }
