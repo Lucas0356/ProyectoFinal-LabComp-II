@@ -12,7 +12,8 @@ header{
     background-color: #273b55;
     position: fixed; /* Posición fija */
     top: 0%; /* Sin margen superior */
-    display: flex; 
+    display: flex;
+    border-bottom: 3px solid #476387;
 }
 
 header h1 {
@@ -123,15 +124,12 @@ div.sidebar-button span {
     width: 40px;
     text-align: center;
     font-size: 30px;
-    color: #000000;
-    background-color: #eb4c49;
-    border: 2px solid #000000;
+    color: #eb4c49;
 }
 
 div.sidebar-button span:hover {
-    color: #273b55;
-    background-color: #fb5350;
-    border: 2px solid #273b55;
+    color: #fbf4e8;
+    transition: all 0,5s linear;
 }
 
 
@@ -141,25 +139,42 @@ div.sidebar-button span:hover {
 /* ESTILOS BODY */
 
 body{
-    background-color: #ffffff;
+    background-color: #fbf4e8;
     padding-top: 100px; /* El relleno es igual a la altura del encabezado para que no lo tape */
     display: flex;
 }
 
 /* ####################################################################################################### */
 
-/* ESTILOS MAIN */
+/* ESTILOS Menú dashboard */
 
-main {
-    display: flex;
+#menu-dashboard {
+    background-color: #273b55;
+    color: #fbf4e8;
+    width: 25%;
 }
 
+#menu-dashboard form p input {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#menu-dashboard form h3{
+    text-align: center;
+    background-color: #476387;
+}
+
+
+/* ####################################################################################################### */
+
+/* ESTILOS Contenido principal */
+
 #content {
+    margin-right: auto;
     margin-top: 2px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-content: flex-start;
 }
 
 .plantilla-widget {
@@ -220,7 +235,8 @@ main {
 }
 
 #barra-secundaria div h4{
-    background-color: #fb5350;
+    color: #fbf4e8;
+    background-color: #476387;
     text-transform: uppercase; /* Mayúsculas */
 }
 
@@ -232,12 +248,12 @@ main {
 #barra-secundaria div ul li {
     list-style: none; /* Listas sin diseño */
     padding: 10px;
-    color: #ffffff;
+    color: #fbf4e8;
     /* Con esto hacemos que se vea de arriba para abajo: foto - nombre - precio */
 }
 
 #barra-secundaria div ul li a p{ /* Botón "ver más" */
-    color: #ffffff;
+    color: #fbf4e8;
     border-top: 2px solid #476387;
     font-weight: bold; /* Negrita */
 }
@@ -249,8 +265,8 @@ main {
 }
 
 #barra-secundaria div ul li img{
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     background-color: #ffffff;
 }
 
