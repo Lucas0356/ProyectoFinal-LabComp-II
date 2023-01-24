@@ -150,7 +150,7 @@ body{
 #menu-dashboard {
     background-color: #273b55;
     color: #fbf4e8;
-    width: 30%; /* Ancho */
+    width: 20%; /* Ancho */
 }
 
 #menu-dashboard form h3{
@@ -176,6 +176,7 @@ body{
 /* ESTILOS Contenido principal */
 
 #content {
+    width: 100%;
     margin-right: auto;
     margin-top: 2px;
     display: flex;
@@ -185,17 +186,33 @@ body{
 
 .plantilla-widget {
     background-color: #273b55;
-    text-align: center;
-    justify-content: center;
-    min-width: 300px;
-    width: 30%;
-    height: 23%;
-    margin: 2px;
+    margin: 5px;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    flex-basis: 260px;
+    flex-shrink: 3;
+    flex-grow: 3;
+}
+
+.plantilla-widget h4 {
+    padding: 5px;
 }
 
 .plantilla-widget h5 {
     font-size: 15px;
+    padding: 5px;
+}
+
+#satisfaccion-usuarios img {
+    width: 50%;
+}
+
+#satisfaccion-usuarios p {
+    color: #82cc00; 
+    /* Le ponemos el color de la escala de satisfacción de los clientes */
 }
 
 .grafico {
@@ -219,6 +236,7 @@ body{
 }
 
 .porcentaje_div{
+    padding: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -260,7 +278,7 @@ body{
 
 #barra-secundaria div ul li a p{ /* Botón "ver más" */
     color: #fbf4e8;
-    border-top: 2px solid #476387;
+    border-top: 2x solid #476387;
     font-weight: bold; /* Negrita */
 }
 
