@@ -189,12 +189,14 @@ body{
     margin: 5px;
     color: #ffffff;
     display: flex;
+    max-width: 48%;
+    flex-grow: 1; 
     align-items: center;
     text-align: center;
-    padding: 25px;
-    flex-basis: 260px;
-    flex-shrink: 3;
-    flex-grow: 3;
+}
+
+div.plantilla-widget:last-child{
+    max-width: 100%;
 }
 
 .plantilla-widget h4 {
