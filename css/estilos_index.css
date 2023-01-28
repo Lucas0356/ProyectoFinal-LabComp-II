@@ -83,7 +83,6 @@ nav.menu button.boton-menu:hover {
 
 #sidebar.active {
     left: 0; /* Damos visualización a la barra lateral */
-    
 }
 
 #sidebar ul li {
@@ -145,7 +144,7 @@ body{
 
 /* ####################################################################################################### */
 
-/* ESTILOS Menú dashboard */
+/* ESTILOS Menú dashboard - barra izquierda*/
 
 #menu-dashboard {
     background-color: #273b55;
@@ -177,8 +176,6 @@ body{
 
 #content {
     width: 100%;
-    margin-right: auto;
-    margin-top: 2px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -186,12 +183,12 @@ body{
 
 .plantilla-widget {
     background-color: #273b55;
-    margin: 5px;
+    margin: 4px;
     color: #ffffff;
-    display: flex;
-    max-width: 48%;
+    max-width: 50%;
+    max-height: 300px;
     flex-grow: 1; 
-    align-items: center;
+    align-content: center;
     text-align: center;
 }
 
@@ -209,7 +206,12 @@ div.plantilla-widget:last-child{
 }
 
 #satisfaccion-usuarios img {
-    width: 50%;
+    padding: 5px;
+    width: 250px;
+}
+
+#stockProductos img {
+    width: 200px;
 }
 
 #satisfaccion-usuarios p {
@@ -218,13 +220,7 @@ div.plantilla-widget:last-child{
 }
 
 .grafico {
-    width: 30%;
-}
-
-.grafico:hover {
-    position: relative; /* Posicion relativa para que se superponga a los demás widgets en caso de ser necesario */
-    width: 50%; /* Zoom a los graficos al pasar el mouse */
-    background-color: #273b55;
+    width: 100px;
 }
 
 .cantidad{
@@ -233,8 +229,12 @@ div.plantilla-widget:last-child{
     margin: 5px 0px 5px 0px;
 }
 
-.porcentaje{
+.porcentaje-up{
     color: rgb(0, 187, 0);
+}
+
+.porcentaje-down{
+    color: red;
 }
 
 .porcentaje_div{
@@ -280,7 +280,7 @@ div.plantilla-widget:last-child{
 
 #barra-secundaria div ul li a p{ /* Botón "ver más" */
     color: #fbf4e8;
-    border-top: 2x solid #476387;
+    border-top: 2px solid #476387;
     font-weight: bold; /* Negrita */
 }
 
@@ -299,3 +299,5 @@ div.plantilla-widget:last-child{
 #barra-secundaria div.info-secundaria {
     width: 100%;
 }
+
+/* ####################################################################################################### */

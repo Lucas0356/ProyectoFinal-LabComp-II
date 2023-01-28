@@ -35,7 +35,6 @@
             </nav>
         </header>
 
-
         <!-- Barra lateral -->
         <div id="sidebar">
             <ul> <!-- Menú de la barra lateral -->
@@ -106,7 +105,7 @@
                     <h2>Ingresos</h2>
                     <p class="cantidad">442.000</p>
                     <div class="porcentaje_div">                       
-                        <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
+                        <p class="porcentaje-up"><span class="material-symbols-outlined">moving</span>50%</p>
                         <p>Desde el último mes</p>
                     </div>
                 </div>
@@ -117,7 +116,7 @@
                     <h2>Egresos</h2>
                     <p class="cantidad">157.000</p>
                     <div class="porcentaje_div">                       
-                        <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
+                        <p class="porcentaje-up"><span class="material-symbols-outlined">moving</span>50%</p>
                         <p>Desde el último mes</p>
                     </div>
                 </div>
@@ -128,7 +127,7 @@
                     <h2>Ventas</h2>
                     <p class="cantidad">1.400</p>
                     <div class="porcentaje_div">                       
-                        <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
+                        <p class="porcentaje-up"><span class="material-symbols-outlined">moving</span> 50%</p>
                         <p>Desde el último mes</p>
                     </div> 
                 </div>
@@ -137,7 +136,7 @@
             <div class="plantilla-widget">
                 <div id="ventas30">
                     <h5>Ventas en los últimos 30 días</h5>
-                    <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
+                    <p class="porcentaje-up"><span class="material-symbols-outlined">moving</span> 50%</p>
                     <img src="img/ventas30.png" class="grafico">
                 </div>
             </div>
@@ -145,7 +144,7 @@
             <div class="plantilla-widget">
                 <div id="eCommerce">
                     <h5>Personas que visitaron tu e-Commerce</h5>
-                    <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
+                    <p class="porcentaje-up"><span class="material-symbols-outlined">moving</span> 50%</p>
                     <img src="img/ventas30.png" class="grafico">
                 </div>
             </div>
@@ -153,6 +152,8 @@
             <div class="plantilla-widget">
                 <div id="stockProductos">
                     <h4>Stock de Productos</h4>
+                    <p class="porcentaje-down"><span class="material-symbols-outlined">trending_down</span> 35%</p>
+                    <img class="grafico" src="img/grafica-stock.webp">
                 </div>
             </div>
 
@@ -165,15 +166,19 @@
             </div>
 
             <div class="plantilla-widget">
-                <div id="ventas" class="widget">
-                    <h2>Ventas</h2>
-                    <p class="cantidad">1.400</p>
-                    <div class="porcentaje_div">                       
-                        <p class="porcentaje"><span class="material-symbols-outlined">moving</span>50%</p>
-                        <p>Desde el último mes</p>
-                    </div> 
+                <div id="provincia-principal" class="widget">
+                    <h4>Provincia principal en ventas</h4>
+                    <img class="grafico" src="img/prov-BuenosAires.webp" alt="Provincia de Buenos Aires">
+                    <p>Buenos Aires</p>
                 </div>
             </div>
+
+            <div class="plantilla-widget">
+                <div id="satisfaccion-usuarios">
+                    <h4> Satisfacción de los clientes</h4>
+                    <img class="grafico" src="img/escala-satisfaccion.webp">
+                    <p>Satisfacción excelente</p>
+                </div>
             </div>
 
         </section>
