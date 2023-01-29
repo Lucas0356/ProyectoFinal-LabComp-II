@@ -94,6 +94,10 @@
                         Satisfacción de los clientes
                         <input type="checkbox" name="clientes">
                     </label>
+                    <label>
+                        Provincia principal en ventas
+                        <input type="checkbox" name="clientes">
+                    </label>
                 </p>
             </form>
         </section>
@@ -152,8 +156,17 @@
             <div class="plantilla-widget">
                 <div id="stockProductos">
                     <h4>Stock de Productos</h4>
-                    <p class="porcentaje-down"><span class="material-symbols-outlined">trending_down</span> 35%</p>
-                    <img class="grafico" src="img/grafica-stock.webp">
+                    <!-- <p class="porcentaje-down"><span class="material-symbols-outlined">trending_down</span> 35%</p> -->
+                    <div id="stock-widget">
+                        <img class="grafico" src="img/grafica-stock.webp">
+                        <div class="productos-widget">
+                            <p class="producto-widget">Vans</p>
+                            <p class="producto-widget">Nike</p>
+                            <p class="producto-widget">Adidas</p>
+                            <p class="producto-widget">New Balance</p>
+                            <p class="producto-widget">Under Armour</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -174,10 +187,10 @@
             </div>
 
             <div class="plantilla-widget">
-                <div id="satisfaccion-usuarios">
-                    <h4> Satisfacción de los clientes</h4>
-                    <img class="grafico" src="img/escala-satisfaccion.webp">
-                    <p>Satisfacción excelente</p>
+                <div id="provincia-principal" class="widget">
+                    <h4>Provincia principal en ventas</h4>
+                    <img class="grafico" src="img/prov-BuenosAires.webp" alt="Provincia de Buenos Aires">
+                    <p>Buenos Aires</p>
                 </div>
             </div>
 
@@ -195,7 +208,7 @@
                     </li>
                     <li>
                         <img src="img/produts-VansOldSkool.webp">
-                        <h5>Vans Old School</h5>
+                        <h5>Vans Old Skool</h5>
                         <p>Precio: $350</p>
                     </li>
                     <li><img src="img/produts-AdidasYeezy.webp">

@@ -144,7 +144,7 @@ body{
 
 /* ####################################################################################################### */
 
-/* ESTILOS Menú dashboard - barra izquierda*/
+/* ESTILOS Configurar dashboard - barra izquierda*/
 
 #menu-dashboard {
     background-color: #273b55;
@@ -153,7 +153,7 @@ body{
 }
 
 #menu-dashboard form h3{
-    padding: 15px 10px; /* Espaciado, 15 arriba y abajo, 10 a los lados */
+    padding: 10px 10px; /* Espaciado, 10 arriba y abajo, 10 a los lados */
     text-align: center;
     background-color: #476387;
 }
@@ -161,7 +161,7 @@ body{
 #menu-dashboard form p label{
     border-top: 1px solid #476387;
     width: 100%;
-    padding: 10px 10px; /* Espaciado, 15 arriba y abajo, 10 a los lados */
+    padding: 8px 10px; /* Espaciado, 8 arriba y abajo, 10 a los lados */
     display: inline-block;
 }
 
@@ -178,15 +178,12 @@ body{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
 }
 
 .plantilla-widget {
     background-color: #273b55;
     margin: 4px;
     color: #ffffff;
-    max-width: 50%;
-    max-height: 300px;
     flex-grow: 1; 
     align-content: center;
     text-align: center;
@@ -207,11 +204,13 @@ div.plantilla-widget:last-child{
 
 #satisfaccion-usuarios img {
     padding: 5px;
-    width: 250px;
+    min-width: 150px;
+    max-width: 250px;
 }
 
 #stockProductos img {
-    width: 200px;
+    min-width: 50px;
+    max-width: 150px;
 }
 
 #satisfaccion-usuarios p {
@@ -219,8 +218,42 @@ div.plantilla-widget:last-child{
     /* Le ponemos el color de la escala de satisfacción de los clientes */
 }
 
+/* Diseños para el widget de stock de productos */
+#stock-widget {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.productos-widget {
+    margin-left: auto;
+    text-align: end;
+}
+
+.productos-widget p:nth-child(1) {
+    color: #fca9a8;
+}
+
+.productos-widget p:nth-child(2) {
+    color: #bdd0fd;
+}
+
+.productos-widget p:nth-child(3) {
+    color: #c7fcbc;
+}
+
+.productos-widget p:nth-child(4) {
+    color: #f8fca9;
+}
+
+.productos-widget p:last-child{
+    color: #fdbefb
+}
+
+
 .grafico {
-    width: 100px;
+    min-width: 50px;
+    max-width: 100px;
 }
 
 .cantidad{
