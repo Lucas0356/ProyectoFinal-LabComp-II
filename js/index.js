@@ -17,3 +17,17 @@ sidebarButton.addEventListener('click', function () {
     // Con esto ya tenemos la función de mostrar/ocultar la barra lateral
 })
 
+const perfilButton = document.querySelector('#btn-perfil');
+
+// querySelector nos permite seleccionar un elemento
+// Lo que encuentre se guardará en una const (constante) llamada perfilButton
+
+// Agregamos un evento al elemento para cuando se le haga click:
+perfilButton.addEventListener('click', function () {
+    // Con "getElementById" seleccionamos un elemento por un ID:
+    document.getElementById('menu-perfil').classList.toggle('active')
+    // Con ".classList.toggle()" le podemos agregar/quitar una clase (depende si la tiene), a un elemento
+    // Con esto ya tenemos la función de mostrar/ocultar el menú del perfil
+})
+
+
