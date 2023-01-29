@@ -76,8 +76,8 @@
                         <input type="checkbox" name="ventas">
                     </label>
                     <label>
-                        Ventas en los últimos 30 días
-                        <input type="checkbox" name="ventas30">
+                        Ventas en el último año
+                        <input type="checkbox" name="ventas-año">
                     </label>
                     <label>
                         Personas que visitaron tu e-Commerce
@@ -93,7 +93,11 @@
                     </label>
                     <label>
                         Provincia principal en ventas
-                        <input type="checkbox" name="clientes">
+                        <input type="checkbox" name="provincia">
+                    </label>
+                    <label>
+                        Interacciones en redes sociales
+                        <input type="checkbox" name="redes-sociales">
                     </label>
                 </p>
             </form>
@@ -135,10 +139,10 @@
             </div>
 
             <div class="plantilla-widget">
-                <div id="ventas30">
-                    <h5>Ventas en los últimos 30 días</h5>
+                <div id="ventasAño">
+                    <h5>Ventas en el último año</h5>
                     <p class="porcentaje-up"><span class="material-symbols-outlined">moving</span> 50%</p>
-                    <img src="img/ventas30.png" class="grafico">
+                    <img src="img/grafico-up.png" class="grafico">
                 </div>
             </div>
 
@@ -146,14 +150,14 @@
                 <div id="eCommerce">
                     <h5>Personas que visitaron tu e-Commerce</h5>
                     <p class="porcentaje-up"><span class="material-symbols-outlined">moving</span> 50%</p>
-                    <img src="img/ventas30.png" class="grafico">
+                    <img src="img/grafico-up.png" class="grafico">
+                    <p>en comparación a los últimos 30 días</p>
                 </div>
             </div>
 
             <div class="plantilla-widget">
                 <div id="stockProductos">
                     <h4>Stock de Productos</h4>
-                    <!-- <p class="porcentaje-down"><span class="material-symbols-outlined">trending_down</span> 35%</p> -->
                     <div id="stock-widget">
                         <img class="grafico" src="img/grafica-stock.webp">
                         <div class="productos-widget">
@@ -185,9 +189,10 @@
 
             <div class="plantilla-widget">
                 <div id="provincia-principal" class="widget">
-                    <h4>Provincia principal en ventas</h4>
-                    <img class="grafico" src="img/prov-BuenosAires.webp" alt="Provincia de Buenos Aires">
-                    <p>Buenos Aires</p>
+                    <h4>Interacciones en redes sociales</h4>
+                    <p class="porcentaje-down"><span class="material-symbols-outlined">trending_down</span> -50%</p>
+                    <img class="grafico" src="img/grafico-down.png" alt="Gráfico">
+                    <p>en comparación a los últimos 30 días</p>
                 </div>
             </div>
 

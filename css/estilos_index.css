@@ -8,7 +8,7 @@ Autores: Lucas Moltedo - Martín Reser
 
 header{
     width: 100%;
-    height: 100px;
+    height: 90px;
     background-color: #273b55;
     position: fixed; /* Posición fija */
     top: 0%; /* Sin margen superior */
@@ -124,15 +124,13 @@ div.sidebar-button span:hover {
     transition: all 0,5s linear;
 }
 
-
-
 /* ####################################################################################################### */
 
 /* ESTILOS BODY */
 
 body{
-    background-color: #fbf4e8;
-    padding-top: 100px; /* El relleno es igual a la altura del encabezado para que no lo tape */
+    background-color:#273b55;
+    padding-top: 90px; /* El relleno es igual a la altura del encabezado para que no lo tape */
     display: flex;
 }
 
@@ -147,7 +145,7 @@ body{
 }
 
 #menu-dashboard form h3{
-    padding: 10px 10px; /* Espaciado, 10 arriba y abajo, 10 a los lados */
+    padding: 12px 10px; /* Espaciado, 12 arriba y abajo, 10 a los lados */
     text-align: center;
     background-color: #476387;
 }
@@ -155,7 +153,7 @@ body{
 #menu-dashboard form p label{
     border-top: 1px solid #476387;
     width: 100%;
-    padding: 8px 10px; /* Espaciado, 8 arriba y abajo, 10 a los lados */
+    padding: 5px 10px; /* Espaciado, 5 arriba y abajo, 10 a los lados */
     display: inline-block;
 }
 
@@ -169,6 +167,7 @@ body{
 /* ESTILOS Contenido principal */
 
 #content {
+    background-color: #fbf4e8;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
