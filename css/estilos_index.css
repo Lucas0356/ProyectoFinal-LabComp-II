@@ -14,11 +14,11 @@ header{
     top: 0%; /* Sin margen superior */
     display: flex;
     border-bottom: 3px solid #476387;
+    align-items: baseline;
 }
 
 header h1 {
     margin-right: auto;  /* Colocamos el logo a la izquierda */
-    line-height: 100px;
     font-size: 22px;
     margin-left: 50px;
     color: #eb4c49;
@@ -29,8 +29,9 @@ header h1 {
 nav.menu {
     margin-left: auto;  /* Colocamos los botones a la derecha */
     line-height: 100px;
+    display: flex;
+    align-items: center;
 }
-
 
 nav.menu button.boton-menu {
     background-color:  transparent; /* Borramos fondo de los botones */
@@ -39,6 +40,7 @@ nav.menu button.boton-menu {
     padding: 15px; /* Relleno de 15px en todas las direcciones */
     color: #ffffff;
     cursor: pointer;
+    height: 70%;
 }
 
 nav.menu button.boton-menu:nth-child(1){
@@ -55,7 +57,7 @@ nav.menu button.boton-menu:hover {
 
 #search-bar input[type=text] {
     border-radius: 50px;
-    margin-top: 40px;
+    margin-top: 35px;
     padding: 6px;
     border: none;
     font-size: 17px;
@@ -70,8 +72,9 @@ nav.menu button.boton-menu:hover {
 #sidebar {
     position: fixed; /* Posición fija */
     height: 100%; /* Altura */
+    width: 207px;
     background-color: #273b55;
-    left: -200px; /* Debido a que el ancho es de 200, con esto ocultaremos la barra lateral */
+    left: -207px; /* Debido a que el ancho es de 207px, con esto ocultaremos la barra lateral */
     transition: all 500ms linear;
 }
 
