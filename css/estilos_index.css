@@ -66,8 +66,10 @@ nav.menu button.boton-menu:hover {
 
 
 /* ####################################################################################################### */
+/* ####################################################################################################### */
+/* ####################################################################################################### */
 
-/*ESTILOS PARA LA BARRA LATERAL */
+/*ESTILOS PARA LA SIDEBAR */
 
 #sidebar {
     position: fixed; /* Posición fija */
@@ -128,6 +130,8 @@ div.sidebar-button span:hover {
 }
 
 /* ####################################################################################################### */
+/* ####################################################################################################### */
+/* ####################################################################################################### */
 
 /* ESTILOS BODY */
 
@@ -137,6 +141,8 @@ body{
     display: flex;
 }
 
+/* ####################################################################################################### */
+/* ####################################################################################################### */
 /* ####################################################################################################### */
 
 /* ESTILOS Configurar dashboard - barra izquierda*/
@@ -162,9 +168,10 @@ body{
 
 #menu-dashboard form p label input{
     margin-left: 85%;
-    color:#eb4c49;
 }
 
+/* ####################################################################################################### */
+/* ####################################################################################################### */
 /* ####################################################################################################### */
 
 /* ESTILOS Contenido principal */
@@ -180,8 +187,7 @@ body{
     background-color: #273b55;
     margin: 4px;
     color: #ffffff;
-    flex-grow: 1; 
-    align-content: center;
+    flex-grow: 1;
     text-align: center;
 }
 
@@ -269,8 +275,6 @@ div.plantilla-widget:last-child{
 .porcentaje_div{
     padding: 5px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-around;
     align-content: baseline;
 }
@@ -279,6 +283,8 @@ div.plantilla-widget:last-child{
     font-size: 1px;
 }
 
+/* ####################################################################################################### */
+/* ####################################################################################################### */
 /* ####################################################################################################### */
 
 /* ESTILOS ASIDE - BARRA SECUNDARIA */
@@ -330,3 +336,125 @@ div.plantilla-widget:last-child{
 }
 
 /* ####################################################################################################### */
+/* ####################################################################################################### */
+/* ####################################################################################################### */
+
+/* ESTILOS PANTALLAS MENORES A 1100px */
+
+@media screen and (max-width: 1100px){
+    /* ESTILOS Configurar dashboard - barra izquierda*/
+    #menu-dashboard form p label{
+        padding: 20px 10px; 
+    }
+} 
+
+/* ####################################################################################################### */
+/* ####################################################################################################### */
+/* ####################################################################################################### */
+
+/* ESTILOS PANTALLAS MENORES A 900px */
+
+@media screen and (max-width: 900px){
+    /*ESTILOS PARA LA SIDEBAR */
+    #sidebar {
+        width: 100%;
+        text-align: left;
+        background-color: #273b55;
+        left: -100%; /* Debido a que el ancho es de 100%, con esto ocultaremos la barra lateral */
+    }
+    #sidebar ul li {
+        font-size: 20px;
+        text-align: center;
+        padding: 20px 10px; /* Espaciado, 20 arriba y abajo, 10 a los lados */
+        border-bottom: 3px solid #476387;
+    }
+
+    /* ESTILOS Configurar dashboard - barra izquierda*/
+    #menu-dashboard form p label{
+        padding: 20px 10px;
+    }
+
+    /* ESTILOS ASIDE - BARRA SECUNDARIA */
+    #barra-secundaria{
+        flex-direction: column; /* Hacemos que ult ventas y empleados salgan uno abajo del otro */
+    }
+
+
+} 
+
+/* ####################################################################################################### */
+/* ####################################################################################################### */
+/* ####################################################################################################### */
+
+/* ESTILOS PANTALLAS MENORES A 750px */
+
+@media screen and (max-width: 750px){
+    /* ESTILOS BODY */
+    body{
+        flex-direction: column;
+    }
+
+    /* ESTILOS CONTENIDO PRINCIPAL */
+    main {
+        order: 1;
+    }
+
+    /* ESTILOS Configurar dashboard - barra izquierda*/
+    #menu-dashboard {
+        width: 100%; /* Ancho */
+        order: 3;
+    }
+    #menu-dashboard form h3{
+        padding: 15px 10px;
+    }
+    #menu-dashboard form p label{
+        border-top: 3px solid #476387;
+    }
+    #menu-dashboard form p label input{
+        margin-left: 99%;
+    }
+
+    /* ESTILOS ASIDE - BARRA SECUNDARIA */
+    aside {
+        order: 2;
+    }
+    #barra-secundaria{
+        flex-direction: row; /* Vuelve al diseño original */
+    }
+}
+
+/* ####################################################################################################### */
+/* ####################################################################################################### */
+/* ####################################################################################################### */
+
+/* ESTILOS PANTALLAS MENORES A 570px */
+
+@media screen and (max-width: 570px){
+    /*ESTILOS PARA EL ENCABEZADO */
+    header h1 {
+        font-size: 20px;
+    }
+    /* Barra de busqueda */
+    #search-bar input[type=text] {
+        border-radius: 50px;
+        margin-top: 35px;
+        border: none;
+        font-size: 15px;
+    }
+    nav.menu button.boton-menu {
+        padding: 10px; /* Relleno de 15px en todas las direcciones */
+    }
+}
+
+/* ####################################################################################################### */
+/* ####################################################################################################### */
+/* ####################################################################################################### */
+
+/* ESTILOS PANTALLAS MENORES A 500px */
+
+@media screen and (max-width: 500px){
+    /*ESTILOS PARA EL ENCABEZADO */
+    header h1 {
+        font-size: 15px;
+    }
+}
