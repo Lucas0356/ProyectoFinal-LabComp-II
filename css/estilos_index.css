@@ -4,177 +4,6 @@ Autores: Lucas Moltedo - Martín Reser
 
 ***********************************************/
 
-/*ESTILOS PARA EL ENCABEZADO */
-
-header{
-    width: 100%;
-    height: 90px;
-    background-color: #273b55;
-    position: fixed; /* Posición fija */
-    top: 0%; /* Sin margen superior */
-    display: flex;
-    border-bottom: 3px solid #476387;
-    align-items: baseline;
-}
-
-header h1 {
-    margin-right: auto;  /* Colocamos el logo a la izquierda */
-    font-size: 22px;
-    margin-left: 50px;
-    color: #eb4c49;
-}
-
-/* Botones del menú */
-
-nav.menu {
-    margin-left: auto;  /* Colocamos los botones a la derecha */
-    line-height: 100px;
-    display: flex;
-    align-items: center;
-}
-
-nav.menu button.boton-menu {
-    background-color:  transparent; /* Borramos fondo de los botones */
-    border: 0; /* Quitamos los bordes de los botones */
-    border-left: 1px solid #ffffff; /* Agregamos separadores a los botones con un borde a la izquierda */
-    padding: 15px; /* Relleno de 15px en todas las direcciones */
-    color: #ffffff;
-    cursor: pointer;
-    height: 70%;
-}
-
-nav.menu button.boton-menu:nth-child(1){
-    border-left: none; /* Borramos el separador primer botón */
-}
-
-nav.menu button.boton-menu:hover {
-    color: #2f2e2e;
-    background-color: #eb4c49; /* Efecto cambio de color al pasar el cursor */
-    transition: 0.5s ease;
-}
-
-/* Barra de busqueda */
-
-#search-bar input[type=text] {
-    border-radius: 50px;
-    margin-top: 35px;
-    padding: 6px;
-    border: none;
-    font-size: 17px;
-}
-
-/* ####################################################################################################### */
-/* ####################################################################################################### */
-/* ####################################################################################################### */
-
-/*ESTILOS Menu de opciones perfil */
-
-#menu-perfil{
-    float: right;
-    position: fixed; /* Posición fija */
-    height: 250px; /* Altura */
-    width: 200px; /* Ancho */
-    background-color: #273b55;
-    right: -500px; /* Debido a que el ancho es de 200px, con esto ocultaremos la barra lateral */
-    transition: all 500ms linear;
-}
-
-#menu-perfil.active {
-    right: 0; /* Damos visualización a la barra lateral */
-}
-
-#menu-perfil ul li {
-    padding: 15px 10px; /* Espaciado, 15 arriba y abajo, 10 a los lados */
-    border-bottom: 1px solid #476387;
-    list-style: none; /* Listas sin diseño */
-}
-
-#menu-perfil ul li a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-#menu-perfil ul li a:hover{
-    color: #eb4c49;
-    transition: all 0,5s linear;
-}
-
-/* ####################################################################################################### */
-/* ####################################################################################################### */
-/* ####################################################################################################### */
-
-/*ESTILOS PARA LA SIDEBAR */
-
-#sidebar {
-    position: fixed; /* Posición fija */
-    height: 100%; /* Altura */
-    width: 207px;
-    background-color: #273b55;
-    left: -207px; /* Debido a que el ancho es de 207px, con esto ocultaremos la barra lateral */
-    transition: all 500ms linear;
-}
-
-#sidebar.active {
-    left: 0; /* Damos visualización a la barra lateral */
-}
-
-#sidebar ul li {
-    padding: 15px 10px; /* Espaciado, 15 arriba y abajo, 10 a los lados */
-    border-bottom: 1px solid #476387;
-    list-style: none; /* Listas sin diseño */
-}
-
-#sidebar ul li a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-#sidebar ul li a:hover{
-    color: #eb4c49;
-    transition: all 0,5s linear;
-}
-
-#sidebar ul li a span{
-    color: #eb4c49;
-}
-
-#sidebar ul li div{
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-} 
-
-div.sidebar-button {
-    position: absolute; /* Se coloca encima de los demás elementos */
-    top: 35px; /* Margin top */
-    margin-left: 5px;
-    cursor: pointer;
-}
-
-div.sidebar-button span {
-    width: 40px;
-    text-align: center;
-    font-size: 30px;
-    color: #eb4c49;
-}
-
-div.sidebar-button span:hover {
-    color: #fbf4e8;
-    transition: all 0,5s linear;
-}
-
-/* ####################################################################################################### */
-/* ####################################################################################################### */
-/* ####################################################################################################### */
-
-/* ESTILOS BODY */
-
-body{
-    background-color:#273b55;
-    padding-top: 90px; /* El relleno es igual a la altura del encabezado para que no lo tape */
-    display: flex;
-}
-
 /* ####################################################################################################### */
 /* ####################################################################################################### */
 /* ####################################################################################################### */
@@ -389,20 +218,6 @@ div.plantilla-widget:last-child{
 /* ESTILOS PANTALLAS MENORES A 900px */
 
 @media screen and (max-width: 900px){
-    /*ESTILOS PARA LA SIDEBAR */
-    #sidebar {
-        width: 100%;
-        text-align: left;
-        background-color: #273b55;
-        left: -100%; /* Debido a que el ancho es de 100%, con esto ocultaremos la barra lateral */
-    }
-    #sidebar ul li {
-        font-size: 20px;
-        text-align: center;
-        padding: 20px 10px; /* Espaciado, 20 arriba y abajo, 10 a los lados */
-        border-bottom: 3px solid #476387;
-    }
-
     /* ESTILOS Configurar dashboard - barra izquierda*/
     #menu-dashboard form p label{
         padding: 20px 10px;
@@ -412,8 +227,6 @@ div.plantilla-widget:last-child{
     #barra-secundaria{
         flex-direction: column; /* Hacemos que ult ventas y empleados salgan uno abajo del otro */
     }
-
-
 } 
 
 /* ####################################################################################################### */
@@ -454,41 +267,5 @@ div.plantilla-widget:last-child{
     }
     #barra-secundaria{
         flex-direction: row; /* Vuelve al diseño original */
-    }
-}
-
-/* ####################################################################################################### */
-/* ####################################################################################################### */
-/* ####################################################################################################### */
-
-/* ESTILOS PANTALLAS MENORES A 570px */
-
-@media screen and (max-width: 570px){
-    /*ESTILOS PARA EL ENCABEZADO */
-    header h1 {
-        font-size: 20px;
-    }
-    /* Barra de busqueda */
-    #search-bar input[type=text] {
-        border-radius: 50px;
-        margin-top: 35px;
-        border: none;
-        font-size: 15px;
-    }
-    nav.menu button.boton-menu {
-        padding: 10px; /* Relleno de 15px en todas las direcciones */
-    }
-}
-
-/* ####################################################################################################### */
-/* ####################################################################################################### */
-/* ####################################################################################################### */
-
-/* ESTILOS PANTALLAS MENORES A 500px */
-
-@media screen and (max-width: 500px){
-    /*ESTILOS PARA EL ENCABEZADO */
-    header h1 {
-        font-size: 15px;
     }
 }
