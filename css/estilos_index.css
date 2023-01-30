@@ -46,6 +46,8 @@ Autores: Lucas Moltedo - Martín Reser
     flex-flow: row wrap;
 }
 
+/* ESTILOS de los widgets */
+
 .plantilla-widget {
     background-color: #273b55;
     margin: 4px;
@@ -67,20 +69,67 @@ div.plantilla-widget:last-child{
     padding: 5px;
 }
 
-#satisfaccion-usuarios img {
-    padding: 5px;
-    min-width: 150px;
-    max-width: 250px;
+/* Estilos conformidad de los usuarios */
+
+.escala-conformidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.escala-conformidad div{
+    display: flex;
+}
+
+.escala-conformidad div span{
+    border-radius: 50%; 
+    font-size: 45px;
+    margin: 5px;
+    color: #273b55;
+}
+
+.escala-conformidad div p{
+    line-height: 50px; /* Ponemos los textos centrados con los iconos */
+}
+
+.escala-conformidad div#satisfecho span{
+    background-color: #83cc01;
+}
+
+.escala-conformidad div#neutral span{
+    background-color: #fbdf00;
+}
+
+.escala-conformidad div#insatisfecho span{
+    background-color: #f40102;
+}
+
+.escala-conformidad div#satisfecho p.conformidad-valor{
+    color: #83cc01; /* Le ponemos el color de la escala de satisfacción de los clientes */
+    font-size: 25px;
+
+}
+
+.escala-conformidad div#neutral p.conformidad-valor{
+    color: #fbdf00; /* Le ponemos el color de la escala de satisfacción de los clientes */
+    font-size: 25px;
+}
+
+.escala-conformidad div#insatisfecho p.conformidad-valor{
+    color: #f40102; /* Le ponemos el color de la escala de satisfacción de los clientes */
+    font-size: 25px;
+}
+
+/* Estilos ecommerce visitas */
+
+#eCommerce p.texto-secundario {
+    font-size: 12px;
+}
+/* Estilos stock productos */
 
 #stockProductos img {
     min-width: 50px;
     max-width: 150px;
-}
-
-#satisfaccion-usuarios p {
-    color: #82cc00; 
-    /* Le ponemos el color de la escala de satisfacción de los clientes */
 }
 
 /* Diseños para el widget de stock de productos */
@@ -115,7 +164,6 @@ div.plantilla-widget:last-child{
     color: #fdbefb
 }
 
-
 .grafico {
     min-width: 50px;
     max-width: 100px;
@@ -135,15 +183,121 @@ div.plantilla-widget:last-child{
     color: red;
 }
 
-.porcentaje_div{
+/* Estilos para los porcentajes grandes de los widgets */
+
+.plantilla-porcentaje{
     padding: 5px;
-    display: flex;
-    justify-content: space-around;
-    align-content: baseline;
 }
 
-.porcentaje_div:nth-child(2){
-    font-size: 1px;
+.porcentaje_div{
+    padding: 5px;
+}
+
+.porcentaje-grande-up{
+    color: rgb(0, 187, 0);
+    font-size: 50px;
+}
+
+/* Estilos grafico de barras */
+
+.grafico-meses{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.plantilla-barra{
+    padding: 4px;
+}
+
+.mes-barra{
+    background-color: #82cc00;
+    width: 20px;
+}
+
+.mes-nombre{
+    font-size: 10px;
+}
+
+/* Definimos la altura de los gráficos de los meses */
+
+.mes-barra[id="enero"]{
+    height: 40px;
+}
+.mes-barra[id="febrero"]{
+    height: 25px;
+}
+.mes-barra[id="marzo"]{
+    height: 15px;
+}
+.mes-barra[id="abril"]{
+    height: 28px;
+}
+.mes-barra[id="mayo"]{
+    height: 31px;
+}
+.mes-barra[id="junio"]{
+    height: 35px;
+}
+.mes-barra[id="julio"]{
+    height: 38px;
+}
+.mes-barra[id="agosto"]{
+    height: 40px;
+}
+.mes-barra[id="septiembre"]{
+    height: 48px;
+}
+.mes-barra[id="octubre"]{
+    height: 54px;
+}
+.mes-barra[id="noviembre"]{
+    height: 50px;
+}
+.mes-barra[id="diciembre"]{
+    height: 60px;
+}
+
+/* Estilos gráfico barras SEMANA */
+
+.grafico-semana{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+.semana-barra{
+    background-color: #82cc00;
+    width: 25px;
+}
+
+.semana-nombre{
+    font-size: 10px;
+}
+
+/* Definimos la altura de los gráficos de la semana */
+
+.semana-barra[id="lunes"]{
+    height: 50px;
+}
+.semana-barra[id="martes"]{
+    height: 62px;
+}
+.semana-barra[id="miercoles"]{
+    height: 70px;
+}
+.semana-barra[id="jueves"]{
+    height: 55px;
+}
+.semana-barra[id="viernes"]{
+    height: 60px;
+}
+.semana-barra[id="sabado"]{
+    height: 71px;
+}
+.semana-barra[id="domingo"]{
+    height: 75px;
 }
 
 /* ####################################################################################################### */
