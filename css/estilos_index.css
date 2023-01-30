@@ -122,8 +122,8 @@ div.plantilla-widget:last-child{
 
 /* Estilos ecommerce visitas */
 
-#eCommerce p.texto-secundario {
-    font-size: 12px;
+.texto-secundario {
+    font-size: 13px;
 }
 /* Estilos stock productos */
 
@@ -161,7 +161,7 @@ div.plantilla-widget:last-child{
 }
 
 .productos-widget p:last-child{
-    color: #fdbefb
+    color: #fdbefb;
 }
 
 .grafico {
@@ -258,7 +258,7 @@ div.plantilla-widget:last-child{
     height: 60px;
 }
 
-/* Estilos gráfico barras SEMANA */
+/* Estilos gráfico barras SEMANA e-commerce */
 
 .grafico-semana{
     display: flex;
@@ -267,7 +267,7 @@ div.plantilla-widget:last-child{
     text-transform: uppercase;
 }
 
-.semana-barra{
+.semana-barra-eCommerce{
     background-color: #82cc00;
     width: 25px;
 }
@@ -276,28 +276,59 @@ div.plantilla-widget:last-child{
     font-size: 10px;
 }
 
-/* Definimos la altura de los gráficos de la semana */
+/* Definimos la altura de los gráficos de la semana de e-commerce */
 
-.semana-barra[id="lunes"]{
+.semana-barra-eCommerce[id="eCommerce-lunes"]{
     height: 50px;
 }
-.semana-barra[id="martes"]{
+.semana-barra-eCommerce[id="eCommerce-martes"]{
     height: 62px;
 }
-.semana-barra[id="miercoles"]{
+.semana-barra-eCommerce[id="eCommerce-miercoles"]{
     height: 70px;
 }
-.semana-barra[id="jueves"]{
+.semana-barra-eCommerce[id="eCommerce-jueves"]{
     height: 55px;
 }
-.semana-barra[id="viernes"]{
+.semana-barra-eCommerce[id="eCommerce-viernes"]{
     height: 60px;
 }
-.semana-barra[id="sabado"]{
+.semana-barra-eCommerce[id="eCommerce-sabado"]{
     height: 71px;
 }
-.semana-barra[id="domingo"]{
+.semana-barra-eCommerce[id="eCommerce-domingo"]{
     height: 75px;
+}
+
+/* Estilos gráfico barras SEMANA redes */
+
+.semana-barra-redes{
+    background-color: #f40102;
+    width: 25px;
+}
+
+/* Definimos la altura de los gráficos de la semana de e-commerce */
+
+.semana-barra-redes[id="redes-lunes"]{
+    height: 50px;
+}
+.semana-barra-redes[id="redes-martes"]{
+    height: 42px;
+}
+.semana-barra-redes[id="redes-miercoles"]{
+    height: 50px;
+}
+.semana-barra-redes[id="redes-jueves"]{
+    height: 55px;
+}
+.semana-barra-redes[id="redes-viernes"]{
+    height: 37px;
+}
+.semana-barra-redes[id="redes-sabado"]{
+    height: 28px;
+}
+.semana-barra-redes[id="redes-domingo"]{
+    height: 25px;
 }
 
 /* ####################################################################################################### */

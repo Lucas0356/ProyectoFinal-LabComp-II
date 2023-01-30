@@ -73,10 +73,10 @@
             </ul>
         </div>
 
-        <!-- Menú Dashboard -->
+        <!-- Menú Preferencias Dashboard -->
         <section id="menu-dashboard">
             <form>
-                <h3>Configurar Dashboard</h3>
+                <h3>Preferencias Dashboard</h3>
                 <p>
                     <label>Ingresos
                         <input type="checkbox" name="ingresos">
@@ -90,19 +90,19 @@
                         <input type="checkbox" name="ventas">
                     </label>
                     <label>
-                        Ventas en el último año
+                        Ventas último año
                         <input type="checkbox" name="ventas-año">
                     </label>
                     <label>
-                        Personas que visitaron tu e-Commerce
+                        Vistas e-Commerce
                         <input type="checkbox" name="visitas">
                     </label>
                     <label>
-                        Stock de Productos
+                        Stock Productos
                         <input type="checkbox" name="stock-productos">
                     </label>
                     <label>
-                        Conformidad de los clientes
+                        Conformidad clientes
                         <input type="checkbox" name="clientes">
                     </label>
                     <label>
@@ -110,7 +110,11 @@
                         <input type="checkbox" name="provincia">
                     </label>
                     <label>
-                        Interacciones en redes sociales
+                        Redes sociales
+                        <input type="checkbox" name="redes-sociales">
+                    </label>
+                    <label>
+                        Gasto en empleados
                         <input type="checkbox" name="redes-sociales">
                     </label>
                 </p>
@@ -216,35 +220,34 @@
                     <p class="porcentaje-up"><span class="material-symbols-outlined">moving</span> 50%</p>
                     <div class="grafico-semana">
                         <div class="plantilla-barra">
-                            <div class="semana-barra" id="lunes"></div>
+                            <div class="semana-barra-eCommerce" id="eCommerce-lunes"></div>
                             <p class="semana-nombre">lun</p>
                         </div>
                         <div class="plantilla-barra">
-                            <div class="semana-barra" id="martes"></div>
+                            <div class="semana-barra-eCommerce" id="eCommerce-martes"></div>
                             <p class="semana-nombre">mar</p>
                         </div>
                         <div class="plantilla-barra">
-                            <div class="semana-barra" id="miercoles"></div>
+                            <div class="semana-barra-eCommerce" id="eCommerce-miercoles"></div>
                             <p class="semana-nombre">mie</p>
                         </div>
                         <div class="plantilla-barra">
-                            <div class="semana-barra" id="jueves"></div>
+                            <div class="semana-barra-eCommerce" id="eCommerce-jueves"></div>
                             <p class="semana-nombre">jue</p>
                         </div>
                         <div class="plantilla-barra">
-                            <div class="semana-barra" id="viernes"></div>
+                            <div class="semana-barra-eCommerce" id="eCommerce-viernes"></div>
                             <p class="semana-nombre">vie</p>
                         </div>
                         <div class="plantilla-barra">
-                            <div class="semana-barra" id="sabado"></div>
+                            <div class="semana-barra-eCommerce" id="eCommerce-sabado"></div>
                             <p class="semana-nombre">sáb</p>
                         </div>
                         <div class="plantilla-barra">
-                            <div class="semana-barra" id="domingo"></div>
+                            <div class="semana-barra-eCommerce" id="eCommerce-domingo"></div>
                             <p class="semana-nombre">dom</p>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -295,9 +298,49 @@
             <div class="plantilla-widget">
                 <div id="interacciones-redes" class="widget">
                     <h4>Interacciones en redes sociales</h4>
+                    <p class="texto-secundario">en la última semana</p>
                     <p class="porcentaje-down"><span class="material-symbols-outlined">trending_down</span> -50%</p>
-                    <img class="grafico" src="img/grafico-down.png" alt="Gráfico">
-                    <p>en comparación a los últimos 30 días</p>
+                    <div class="grafico-semana">
+                        <div class="plantilla-barra">
+                            <div class="semana-barra-redes" id="redes-lunes"></div>
+                            <p class="semana-nombre">lun</p>
+                        </div>
+                        <div class="plantilla-barra">
+                            <div class="semana-barra-redes" id="redes-martes"></div>
+                            <p class="semana-nombre">mar</p>
+                        </div>
+                        <div class="plantilla-barra">
+                            <div class="semana-barra-redes" id="redes-miercoles"></div>
+                            <p class="semana-nombre">mie</p>
+                        </div>
+                        <div class="plantilla-barra">
+                            <div class="semana-barra-redes" id="redes-jueves"></div>
+                            <p class="semana-nombre">jue</p>
+                        </div>
+                        <div class="plantilla-barra">
+                            <div class="semana-barra-redes" id="redes-viernes"></div>
+                            <p class="semana-nombre">vie</p>
+                        </div>
+                        <div class="plantilla-barra">
+                            <div class="semana-barra-redes" id="redes-sabado"></div>
+                            <p class="semana-nombre">sáb</p>
+                        </div>
+                        <div class="plantilla-barra">
+                            <div class="semana-barra-redes" id="redes-domingo"></div>
+                            <p class="semana-nombre">dom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plantilla-widget">
+                <div id="gasto-empleados" class="widget">
+                    <h2>Gasto en empleados</h2>
+                    <p class="cantidad">75.000</p>
+                    <div class="plantilla-porcentaje">                       
+                        <p class="porcentaje-grande-up">+ 15%</p>
+                        <p>Desde hace 6 meses</p>
+                    </div>
                 </div>
             </div>
 
