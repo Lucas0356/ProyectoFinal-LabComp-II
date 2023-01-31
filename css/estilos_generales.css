@@ -94,7 +94,6 @@ nav.menu button.boton-menu:hover {
 #menu-perfil{
     float: right;
     position: fixed; /* Posición fija */
-    height: 250px; /* Altura */
     width: 200px; /* Ancho */
     background-color: #273b55;
     right: -500px; /* Debido a que el ancho es de 200px, con esto ocultaremos la barra lateral */
