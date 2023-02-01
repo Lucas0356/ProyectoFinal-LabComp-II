@@ -97,7 +97,7 @@ h4.user-detalles-titulo{
     padding: 15px;
 }
 
-.plantilla-datos p.dato-titulo{
+.plantilla-datos label.dato-titulo{
     text-align: left;
     font-weight: bold;
     width: 30%;

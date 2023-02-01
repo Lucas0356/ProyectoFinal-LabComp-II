@@ -171,23 +171,23 @@
                 <h4 class="user-detalles-titulo">Editar información</h4>
                 <form>
                     <div class="plantilla-datos">
-                        <p class="dato-titulo">Nombre</p>
+                        <label for="inNombre" class="dato-titulo">Nombre</label>
                         <input type="text" id="inNombre" placeholder="Nombre y apellido" optional>
                     </div>
                     <div class="plantilla-datos">
-                        <p class="dato-titulo">Nacimiento</p>
+                        <label for="inNacimiento" class="dato-titulo">Nacimiento</label>
                         <input type="date" id="inNacimiento" min="#" optional>
                     </div>
                     <div class="plantilla-datos">
-                        <p class="dato-titulo">Puesto</p>
+                        <label for="inPuesto" class="dato-titulo">Puesto</label>
                         <input type="text" id="inPuesto" placeholder="Gerente" readonly>
                     </div>
                     <div class="plantilla-datos">
-                        <p class="dato-titulo">Antiguedad</p>
+                        <label for="inAntiguedad" class="dato-titulo">Antiguedad</label>
                         <input type="text" id="inAntiguedad" placeholder="4 años" readonly>
                     </div>
                     <div class="plantilla-datos">
-                        <p class="dato-titulo">Nacionalidad</p>
+                        <label for="inNacionalidad" class="dato-titulo">Nacionalidad</label>
                         <select name ="nacionalidad" id="inNacionalidad" optional>
                             <option value="ARG">Argentina</option>
                             <option value="URU">Uruguaya</option>
@@ -198,16 +198,16 @@
                         </select>
                     </div>
                     <div class="plantilla-datos">
-                        <p class="dato-titulo">Teléfono</p>
+                        <label for="inTelefono" class="dato-titulo">Teléfono</label>
                         <input type="tel" id="inTelefono" placeholder="(Código de área) Número" optional>
                     </div>
                     <div class="plantilla-datos">
-                        <p class="dato-titulo">E-mail</p>
+                        <label for="inEmail" class="dato-titulo">E-Mail</label>
                         <input type="email" id="inEmail" placeholder="ejemplo@gmail.com" optional>
                     </div>
                     <div class="plantilla-datos">
-                        <p class="dato-titulo">Ciudad</p>
-                        <select name ="nacionalidad" id="inNacionalidad">
+                        <label for="inCiudad" class="dato-titulo">Ciudad</label>
+                        <select name ="ciudad" id="inCiudad">
                             <option value="BHB">Bahía Blanca</option>
                             <option value="BRL">Bariloche</option>
                             <option value="CFE">Capital federal</option>
@@ -215,7 +215,7 @@
                         </select>
                     </div>
                     <div class="plantilla-datos">
-                        <p class="dato-titulo">Dirección</p>
+                        <label for="inDireccion" class="dato-titulo">Dirección</label>
                         <input type="text" id="inDireccion" placeholder="Calle y número" optional>
                     </div>
                     <input type="submit" id="submit-info-personal"> 
