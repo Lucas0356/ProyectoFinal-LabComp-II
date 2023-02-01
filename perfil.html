@@ -3,6 +3,7 @@
     <head>
         <title>Molt Store - Perfil</title>
         <meta charset="UTF-8">
+        <link rel="shortcut icon" href="img/LogoEmpresa.ico">
         <link rel="stylesheet" href="css/estilos_generales.css">
         <link rel="stylesheet" href="css/estilos_perfil.css">
         <!-- Importamos los íconos de google -->
@@ -36,7 +37,7 @@
         <div id="menu-perfil">
             <ul>
                 <li>
-                    <a href="perfil.html">Ir al perfil</a>
+                    <a href="perfil.html">Mi perfil</a>
                 </li>
             </ul>
             <ul>
@@ -116,6 +117,7 @@
 
         <!-- Contenido principal -->
         <main>
+            <!-- info personal -->
             <div class="user-detalles">
                 <h4 class="user-detalles-titulo">Información personal</h4>
                 <div class="plantilla-datos">
@@ -145,7 +147,7 @@
                 </div>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Teléfono</p>
-                    <p class="dato-texto">+54 2913562456</p>
+                    <p class="dato-texto">291 3562456</p>
                     <a href="#" class="editar">Editar</a>
                 </div>
                 <div class="plantilla-datos">
@@ -154,16 +156,82 @@
                     <a href="#" class="editar">Editar</a>
                 </div>
                 <div class="plantilla-datos">
-                    <p class="dato-titulo">Domicilio</p>
-                    <p class="dato-texto">Viamonte 276, Bahía Blanca</p>
+                    <p class="dato-titulo">Ciudad</p>
+                    <p class="dato-texto">Bahía Blanca</p>
                     <a href="#" class="editar">Editar</a>
                 </div>
+                <div class="plantilla-datos">
+                    <p class="dato-titulo">Dirección</p>
+                    <p class="dato-texto">Viamonte 276</p>
+                    <a href="#" class="editar">Editar</a>
+                </div>
+            </div>
+            <!-- Editar info personal -->
+            <div class="user-detalles">
+                <h4 class="user-detalles-titulo">Editar información</h4>
+                <form>
+                    <div class="plantilla-datos">
+                        <p class="dato-titulo">Nombre</p>
+                        <input type="text" id="inNombre" placeholder="Nombre y apellido" optional>
+                    </div>
+                    <div class="plantilla-datos">
+                        <p class="dato-titulo">Nacimiento</p>
+                        <input type="date" id="inNacimiento" min="#" optional>
+                    </div>
+                    <div class="plantilla-datos">
+                        <p class="dato-titulo">Puesto</p>
+                        <input type="text" id="inPuesto" placeholder="Gerente" readonly>
+                    </div>
+                    <div class="plantilla-datos">
+                        <p class="dato-titulo">Antiguedad</p>
+                        <input type="text" id="inAntiguedad" placeholder="4 años" readonly>
+                    </div>
+                    <div class="plantilla-datos">
+                        <p class="dato-titulo">Nacionalidad</p>
+                        <select name ="nacionalidad" id="inNacionalidad" optional>
+                            <option value="ARG">Argentina</option>
+                            <option value="URU">Uruguaya</option>
+                            <option value="CHL">Chilena</option>
+                            <option value="USA">Estadounidense</option>
+                            <option value="PAR">Paraguaya</option>
+                            <option value="VEN">Venezolana</option>
+                        </select>
+                    </div>
+                    <div class="plantilla-datos">
+                        <p class="dato-titulo">Teléfono</p>
+                        <input type="tel" id="inTelefono" placeholder="(Código de área) Número" optional>
+                    </div>
+                    <div class="plantilla-datos">
+                        <p class="dato-titulo">E-mail</p>
+                        <input type="email" id="inEmail" placeholder="ejemplo@gmail.com" optional>
+                    </div>
+                    <div class="plantilla-datos">
+                        <p class="dato-titulo">Ciudad</p>
+                        <select name ="nacionalidad" id="inNacionalidad">
+                            <option value="BHB">Bahía Blanca</option>
+                            <option value="BRL">Bariloche</option>
+                            <option value="CFE">Capital federal</option>
+                            <option value="MDQ">Mar del plata</option>
+                        </select>
+                    </div>
+                    <div class="plantilla-datos">
+                        <p class="dato-titulo">Dirección</p>
+                        <input type="text" id="inDireccion" placeholder="Calle y número" optional>
+                    </div>
+                    <input type="submit" id="submit-info-personal"> 
+                </form>
             </div>
         </main>
 
         <!-- Barra secundaria -->
         <aside>
         </aside>
+
+        <footer>
+            <h3>Lucas Moltedo - Martín Reser</h3>
+            <p>Proyecto Final LAB-COMP II</p>
+            <a href="https://github.com/Lucas0356/ProyectoFinal-LabComp-II">Repositorio de GitHub del proyecto</a>
+        </footer>
 
         <!-- Javascript -->
         <script src="js/general.js" charset="UTF-8"></script>
