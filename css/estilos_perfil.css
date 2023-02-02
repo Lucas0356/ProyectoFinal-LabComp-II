@@ -8,9 +8,9 @@ Autores: Lucas Moltedo - Martín Reser
 /* ####################################################################################################### */
 /* ####################################################################################################### */
 
-/* Estilos lateral izquierdo */
+/* Estilos sidebar lateral izquierdo */
 
-section.lateral-izquierdo{
+sidebar.lateral-izquierdo{
     background-color: #273b55;
     width: 13%;
     height: 90%;
@@ -21,11 +21,11 @@ section.lateral-izquierdo{
     flex-direction: column;
     align-items: center;
     background-color: #476387;
-    
 }
 
 .user-perfil img {
-    width: 150px;
+    min-width: 100px;
+    max-width: 60%;
     margin: 10px;
     border-radius: 50%;
 }
@@ -34,7 +34,6 @@ section.lateral-izquierdo{
     color: #fbf4e8;
     text-align: center;
     padding: 5px;
-    width: 100%;
 }
 
 div.menu-opciones ul li{
@@ -48,9 +47,14 @@ div.menu-opciones ul li a{
     color:#fbf4e8;
 }
 
-div.menu-opciones ul li a span{
-    margin: 5%;
+div.menu-opciones ul li a:hover{
+    color: #eb4c49;
 }
+
+div.menu-opciones ul li p{
+    margin-left: 5%;
+}
+
 
 /* ####################################################################################################### */
 /* ####################################################################################################### */
@@ -174,7 +178,6 @@ footer{
 
 .footer-content h3{
     font-size: 20px;
-    margin-top: 2px solid #fbf4e8;
     color: #eb4c49;
 }
 
