@@ -13,6 +13,7 @@ Autores: Lucas Moltedo - Martín Reser
 section.lateral-izquierdo{
     background-color: #273b55;
     width: 13%;
+    height: 90%;
 }
 
 .user-perfil{
@@ -37,7 +38,7 @@ section.lateral-izquierdo{
 }
 
 div.menu-opciones ul li{
-    padding: 20px;
+    padding: 10px;
 }
 
 
@@ -59,6 +60,7 @@ div.menu-opciones ul li a span{
 
 body{
     flex-wrap: wrap;
+    height: 100%;
 }
 
 /* ####################################################################################################### */
@@ -70,6 +72,7 @@ body{
 main {
     background-color: #fbf4e8;
     width: 87%;
+    height: 40%;
     display: flex;
     align-items: center;
 }
@@ -77,10 +80,10 @@ main {
 /* Detalles del usuario */
 
 div.user-detalles{
-    width: 40%;
+    width: 50%;
     padding: 5px;
     background-color: #476387;
-    margin: 20px;
+    margin: 5px;
 }
 
 h4.user-detalles-titulo{
@@ -97,7 +100,7 @@ h4.user-detalles-titulo{
     padding: 15px;
 }
 
-.plantilla-datos label.dato-titulo{
+.plantilla-datos p.dato-titulo{
     text-align: left;
     font-weight: bold;
     width: 30%;
@@ -115,14 +118,43 @@ h4.user-detalles-titulo{
     transition: 0.5s ease;
 }
 
-/* Editor de info del usuario */
-
-/* botón submit */
-#submit-info-personal{
-    padding: 10px;
+#editar-info-personal{
+    margin-left: auto;
     background-color: #273b55;
     color: #fbf4e8;
+    cursor: pointer;
 }
+
+#editar-info-personal:hover{
+    background-color: #476387;
+    transition: 0.2s ease;
+    color: #fbf4e8;
+}
+
+/* botones submit y editar */
+
+.boton-info{
+    padding: 2px;
+    margin-left: auto;
+    background-color: #273b55;
+    color: #fbf4e8;
+    cursor: pointer;
+}
+
+.boton-info:hover{
+    background-color: #476387;
+    transition: 0.2s ease;
+    color: #fbf4e8;
+}
+
+/* Editor de info del usuario */
+
+.plantilla-datos label.dato-titulo{
+    text-align: left;
+    font-weight: bold;
+    width: 30%;
+}
+
 
 /* ####################################################################################################### */
 /* ####################################################################################################### */
@@ -135,11 +167,32 @@ footer{
     height: 10%;
 }
 
-footer h3{
+.footer-content{
+    padding: 5px;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 20px;
+    margin-top: 2px solid #fbf4e8;
     color: #eb4c49;
 }
 
-footer p{
-    font-size: 20px;
+.footer-content p{
+    font-size: 15px;
     color: #fbf4e8;
 }
+
+.footer-content a{
+    text-decoration: none;
+    color:#fbf4e8;
+}
+
+.footer-content a:hover{
+    color: #eb4c49;
+}
+
+.footer-content a i{
+    font-size: 25px;
+}
+

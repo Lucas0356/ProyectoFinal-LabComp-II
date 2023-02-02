@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="css/estilos_perfil.css">
         <!-- Importamos los íconos de google -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!-- Importamos los íconos de Font-awesomo (para el ícono de GitHub) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
 
     <body>
@@ -123,47 +125,39 @@
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Nombre</p>
                     <p class="dato-texto">Juan García</p>
-                    <a href="#" class="editar">Editar</a>
                 </div>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Nacimiento</p>
                     <p class="dato-texto">14/7/1992</p>
-                    <a href="#" class="editar">Editar</a>
                 </div>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Puesto</p>
                     <p class="dato-texto">Gerente</p>
-                    <a href="#" class="editar">Editar</a>
                 </div>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Antiguedad</p>
                     <p class="dato-texto">4 años</p>
-                    <a href="#" class="editar">Editar</a>
                 </div>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Nacionalidad</p>
                     <p class="dato-texto">Argentina</p>
-                    <a href="#" class="editar">Editar</a>
                 </div>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Teléfono</p>
                     <p class="dato-texto">291 3562456</p>
-                    <a href="#" class="editar">Editar</a>
                 </div>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">E-mail</p>
                     <p class="dato-texto">juancitogarcia@gmail.com</p>
-                    <a href="#" class="editar">Editar</a>
                 </div>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Ciudad</p>
                     <p class="dato-texto">Bahía Blanca</p>
-                    <a href="#" class="editar">Editar</a>
                 </div>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Dirección</p>
                     <p class="dato-texto">Viamonte 276</p>
-                    <a href="#" class="editar">Editar</a>
+                    <button type="button" class="boton-info">Editar información</button>
                 </div>
             </div>
             <!-- Editar info personal -->
@@ -217,8 +211,9 @@
                     <div class="plantilla-datos">
                         <label for="inDireccion" class="dato-titulo">Dirección</label>
                         <input type="text" id="inDireccion" placeholder="Calle y número" optional>
+                        <input type="submit" value="Guardar cambios" class="boton-info">
                     </div>
-                    <input type="submit" id="submit-info-personal"> 
+
                 </form>
             </div>
         </main>
@@ -228,9 +223,12 @@
         </aside>
 
         <footer>
-            <h3>Lucas Moltedo - Martín Reser</h3>
-            <p>Proyecto Final LAB-COMP II</p>
-            <a href="https://github.com/Lucas0356/ProyectoFinal-LabComp-II">Repositorio de GitHub del proyecto</a>
+            <div class="footer-content">
+                <h3>Lucas Moltedo - Martín Reser</h3>
+                <p>Proyecto Final LAB-COMP II</p>
+                <p>Visita el repositorio de nuestro proyecto</p>
+                <a href="https://github.com/Lucas0356/ProyectoFinal-LabComp-II"><i class="fa-brands fa-github"></i></a>
+            </div>
         </footer>
 
         <!-- Javascript -->
