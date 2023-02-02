@@ -82,6 +82,7 @@ nav.menu button.boton-menu:hover {
     padding: 6px;
     border: none;
     font-size: 17px;
+    box-shadow: 0 0 20px #eb4c49
 }
 
 

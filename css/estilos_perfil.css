@@ -136,6 +136,18 @@ h4.user-detalles-titulo{
     color: #fbf4e8;
 }
 
+.estilo-input{
+    background-color: #e7e7e7;
+    box-shadow: 0 0 20px #000000;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+input.placeholder{
+    text-align: center;
+}
+
 /* botones submit y editar */
 
 .boton-info{
