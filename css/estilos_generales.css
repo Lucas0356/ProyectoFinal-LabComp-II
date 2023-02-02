@@ -146,6 +146,7 @@ nav.menu button.boton-menu:hover {
 }
 
 #sidebar ul li a{
+    display: flex;
     text-decoration: none;
     color: #ffffff;
 }
@@ -157,6 +158,10 @@ nav.menu button.boton-menu:hover {
 
 #sidebar ul li a span{
     color: #eb4c49;
+}
+
+#sidebar ul li p{
+    margin-left: 5%;
 }
 
 #sidebar ul li div{

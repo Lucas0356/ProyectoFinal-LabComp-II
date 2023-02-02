@@ -10,7 +10,7 @@ Autores: Lucas Moltedo - Martín Reser
 
 /* Estilos sidebar lateral izquierdo */
 
-sidebar.lateral-izquierdo{
+aside.lateral-izquierdo{
     background-color: #273b55;
     width: 13%;
     height: 90%;
@@ -49,6 +49,7 @@ div.menu-opciones ul li a{
 
 div.menu-opciones ul li a:hover{
     color: #eb4c49;
+    transition: all 0,5s linear;
 }
 
 div.menu-opciones ul li p{
