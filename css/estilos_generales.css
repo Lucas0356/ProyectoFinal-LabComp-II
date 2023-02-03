@@ -82,7 +82,7 @@ nav.menu button.boton-menu:hover {
     padding: 6px;
     border: none;
     font-size: 17px;
-    box-shadow: 0 0 20px #eb4c49
+    box-shadow: 0 0 8px #eb4c49
 }
 
 
@@ -161,7 +161,7 @@ nav.menu button.boton-menu:hover {
     color: #eb4c49;
 }
 
-#sidebar ul li p{
+#sidebar ul li a p{
     margin-left: 5%;
 }
 

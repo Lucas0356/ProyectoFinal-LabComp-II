@@ -141,7 +141,7 @@
         <!-- Contenido principal -->
         <main>
             <!-- info personal -->
-            <div class="user-detalles">
+            <div class="user-detalles" id="info-personal">
                 <h4 class="user-detalles-titulo">Información personal</h4>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Nombre</p>
@@ -178,12 +178,15 @@
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Dirección</p>
                     <p class="dato-texto">Viamonte 276</p>
-                    <button type="button" class="boton-info">Editar información</button>
+                    <button type="button" class="boton-info" id="boton-editar" >Editar</button>
                 </div>
             </div>
             <!-- Editar info personal -->
-            <div class="user-detalles">
-                <h4 class="user-detalles-titulo">Editar información</h4>
+            <div id="editor-info-personal" class="user-detalles">
+                <div class="header-editar-info">
+                    <span class="material-symbols-outlined boton-cerrar">close</span>
+                    <h4 class="user-detalles-titulo">Editar información personal</h4>
+                </div>
                 <form>
                     <div class="plantilla-datos">
                         <label for="inNombre" class="dato-titulo">Nombre</label>
@@ -232,9 +235,57 @@
                     <div class="plantilla-datos">
                         <label for="inDireccion" class="dato-titulo">Dirección</label>
                         <input type="text" id="inDireccion" placeholder="Calle y número" class ="estilo-input" optional>
-                        <input type="submit" value="Guardar cambios" class="boton-info">
+                        <input type="submit" value="Confirmar" class="boton-info">
                     </div>
-
+                </form>
+            </div>
+            <!-- Editar info privacidad y seguridad -->
+            <div id="editor-info-privacidad" class="user-detalles">
+                <div class="header-editar-info">
+                    <h4 class="user-detalles-titulo">Editar Privacidad y seguridad</h4>
+                </div>
+                <form>
+                    <div class="plantilla-datos">
+                        <label for="inNombre" class="dato-titulo">#####</label>
+                        <input type="text" id="inNombre" placeholder="###" class ="estilo-input" optional>
+                    </div>
+                    <div class="plantilla-datos">
+                        <label for="inNacimiento" class="dato-titulo">######</label>
+                        <input type="date" id="inNacimiento" min="#" class ="estilo-input" optional>
+                    </div>
+                    <div class="plantilla-datos">
+                        <label for="inPuesto" class="dato-titulo">#####</label>
+                        <input type="text" id="inPuesto" placeholder="#####" class ="estilo-input" readonly>
+                    </div>
+                    <div class="plantilla-datos">
+                        <label for="inAntiguedad" class="dato-titulo">######</label>
+                        <input type="text" id="inAntiguedad" placeholder="#####" class ="estilo-input" readonly>
+                    </div>
+                    <div class="plantilla-datos">
+                        <label for="inNacionalidad" class="dato-titulo">####</label>
+                        <select name ="nacionalidad" id="inNacionalidad" class ="estilo-input" optional>
+                            <option value="ARG">####</option>
+                        </select>
+                    </div>
+                    <div class="plantilla-datos">
+                        <label for="inTelefono" class="dato-titulo">#####</label>
+                        <input type="tel" id="inTelefono" placeholder="######" class ="estilo-input" optional>
+                    </div>
+                    <div class="plantilla-datos">
+                        <label for="inEmail" class="dato-titulo">#####</label>
+                        <input type="email" id="inEmail" placeholder="######" class ="estilo-input" optional>
+                    </div>
+                    <div class="plantilla-datos">
+                        <label for="inCiudad" class="dato-titulo">######</label>
+                        <select name ="ciudad" id="inCiudad" class ="estilo-input">
+                            <option value="BHB">#####</option>
+                        </select>
+                    </div>
+                    <div class="plantilla-datos">
+                        <label for="inDireccion" class="dato-titulo">#####</label>
+                        <input type="text" id="inDireccion" placeholder="#####" class ="estilo-input" optional>
+                        <input type="submit" value="Confirmar" class="boton-info">
+                    </div>
                 </form>
             </div>
         </main>
@@ -244,11 +295,14 @@
                 <h3>Lucas Moltedo - Martín Reser</h3>
                 <p>Proyecto Final LAB-COMP II</p>
                 <p>Visita el repositorio de nuestro proyecto</p>
-                <a href="https://github.com/Lucas0356/ProyectoFinal-LabComp-II"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/Lucas0356/ProyectoFinal-LabComp-II" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
         </footer>
 
         <!-- Javascript -->
         <script src="js/general.js" charset="UTF-8"></script>
+        <script src="js/perfil.js" charset="UTF-8"></script>
     </body>
 </html>
