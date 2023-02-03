@@ -112,12 +112,6 @@
                     </li>
                     <li>
                         <a href="#">
-                            <span class="material-symbols-outlined">admin_panel_settings</span>
-                            <p>Datos y privacidad</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
                             <span class="material-symbols-outlined">lock</span>
                             <p>Seguridad</p>
                         </a>
@@ -178,13 +172,38 @@
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Dirección</p>
                     <p class="dato-texto">Viamonte 276</p>
-                    <button type="button" class="boton-info" id="boton-editar" >Editar</button>
+                    <button type="button" class="boton-info" id="boton-editar-personal" >Editar</button>
+                </div>
+            </div>
+            <!-- info seguridad -->
+            <div class="user-detalles" id="info-seguridad">
+                <h4 class="user-detalles-titulo">Seguridad</h4>
+                <div class="plantilla-datos">
+                    <p class="dato-titulo">Pregunta de seguridad</p>
+                    <p class="dato-texto">Sí</p>
+                </div>
+                <div class="plantilla-datos">
+                    <p class="dato-titulo">Verificación en 2 pasos</p>
+                    <p class="dato-texto">No</p>
+                </div>
+                <div class="plantilla-datos">
+                    <p class="dato-titulo">E-mail de respaldo</p>
+                    <p class="dato-texto">juancito2@gmail.com</p>
+                </div>
+                <div class="plantilla-datos">
+                    <p class="dato-titulo">Dispositivos con acceso a la cuenta</p>
+                    <p class="dato-texto">Samsung Galaxy S20 - Notebook HP Pavilion</p>
+                </div>
+                <div class="plantilla-datos">
+                    <p class="dato-titulo">Correo de respaldo</p>
+                    <p class="dato-texto">juancito2@gmail.com</p>
+                    <button type="button" class="boton-info" id="boton-editar-seguridad" >Editar</button>
                 </div>
             </div>
             <!-- Editar info personal -->
             <div id="editor-info-personal" class="user-detalles">
                 <div class="header-editar-info">
-                    <span class="material-symbols-outlined boton-cerrar">close</span>
+                    <span class="material-symbols-outlined boton-cerrar-personal">close</span>
                     <h4 class="user-detalles-titulo">Editar información personal</h4>
                 </div>
                 <form>
@@ -239,9 +258,10 @@
                     </div>
                 </form>
             </div>
-            <!-- Editar info privacidad y seguridad -->
-            <div id="editor-info-privacidad" class="user-detalles">
+            <!-- Editar info seguridad -->
+            <div id="editor-info-seguridad" class="user-detalles">
                 <div class="header-editar-info">
+                    <span class="material-symbols-outlined boton-cerrar-seguridad">close</span>
                     <h4 class="user-detalles-titulo">Editar Privacidad y seguridad</h4>
                 </div>
                 <form>

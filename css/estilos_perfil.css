@@ -77,18 +77,17 @@ body{
 main {
     background-color: #fbf4e8;
     width: 87%;
-    height: 40%;
     display: flex;
     align-items: center;
 }
 
 /* Detalles del usuario */
 
-#info-personal{
-    width: 100%;
+#info-personal.active{
+    display: none;
 }
 
-#info-personal.active{
+#info-seguridad.active{
     display: none;
 }
 
@@ -96,6 +95,8 @@ div.user-detalles{
     padding: 5px;
     background-color: #476387;
     margin: 5px;
+    width: 50%;
+    height: 98%;
 }
 
 h4.user-detalles-titulo{
@@ -114,9 +115,8 @@ h4.user-detalles-titulo{
 }
 
 .plantilla-datos p.dato-titulo{
-    text-align: left;
     font-weight: bold;
-    width: 30%;
+    width: 35%;
 }
 
 .plantilla-datos a.editar{
@@ -184,11 +184,11 @@ input.placeholder{
     width: 50%;
 }
 
-#editor-info-privacidad{
+#editor-info-seguridad{
     display: none;
 }
 
-#editor-info-privacidad.active{
+#editor-info-seguridad.active{
     display: block;
     width: 50%;
 }
@@ -204,7 +204,15 @@ input.placeholder{
     align-items: center;
 }
 
-.boton-cerrar{
+.boton-cerrar-personal{
+    /* Botón para cancelar la edición de datos */
+    color: #fbf4e8;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 1%;
+}
+
+.boton-cerrar-seguridad{
     /* Botón para cancelar la edición de datos */
     color: #fbf4e8;
     cursor: pointer;
@@ -221,7 +229,6 @@ input.placeholder{
 
 footer{
     width: 100%;
-    height: 10%;
 }
 
 .footer-content{
