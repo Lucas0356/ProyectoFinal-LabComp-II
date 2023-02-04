@@ -266,44 +266,40 @@
                 </div>
                 <form>
                     <div class="plantilla-datos">
-                        <label for="inNombre" class="dato-titulo">#####</label>
-                        <input type="text" id="inNombre" placeholder="###" class ="estilo-input" optional>
-                    </div>
-                    <div class="plantilla-datos">
-                        <label for="inNacimiento" class="dato-titulo">######</label>
-                        <input type="date" id="inNacimiento" min="#" class ="estilo-input" optional>
-                    </div>
-                    <div class="plantilla-datos">
-                        <label for="inPuesto" class="dato-titulo">#####</label>
-                        <input type="text" id="inPuesto" placeholder="#####" class ="estilo-input" readonly>
-                    </div>
-                    <div class="plantilla-datos">
-                        <label for="inAntiguedad" class="dato-titulo">######</label>
-                        <input type="text" id="inAntiguedad" placeholder="#####" class ="estilo-input" readonly>
-                    </div>
-                    <div class="plantilla-datos">
-                        <label for="inNacionalidad" class="dato-titulo">####</label>
-                        <select name ="nacionalidad" id="inNacionalidad" class ="estilo-input" optional>
-                            <option value="ARG">####</option>
+                        <label for="inPregunta1" class="dato-titulo">Pregunta de Seguridad</label>
+                        <select name ="pregunta-1" id="inPregunta1"  class ="estilo-input" required>
+                                <option value="NAME_MOM"> ¿Cual era el nombre de tu mamá?</option>
+                                <option value="NAME_SCHOOL"> ¿Cómo se llamaba la escuela en la que te graduaste?</option>
+                                <option value="NAME_SCHOOL"> ¿En qué ciudad se conocieron tus padres?</option>
                         </select>
                     </div>
                     <div class="plantilla-datos">
-                        <label for="inTelefono" class="dato-titulo">#####</label>
-                        <input type="tel" id="inTelefono" placeholder="######" class ="estilo-input" optional>
+                        <label for="inRespuesta1" class="dato-titulo">Respuesta</label>
+                        <input type="password" id="inRespuesta1" class ="estilo-input" required>
                     </div>
                     <div class="plantilla-datos">
-                        <label for="inEmail" class="dato-titulo">#####</label>
-                        <input type="email" id="inEmail" placeholder="######" class ="estilo-input" optional>
-                    </div>
-                    <div class="plantilla-datos">
-                        <label for="inCiudad" class="dato-titulo">######</label>
-                        <select name ="ciudad" id="inCiudad" class ="estilo-input">
-                            <option value="BHB">#####</option>
+                        <label for="inPregunta2" class="dato-titulo">Pregunta de Seguridad</label>
+                        <select name ="pregunta-2" id="inPregunta2"  class ="estilo-input" required>
+                                <option value="NAME_KISS"> ¿Con quien te diste tu primer beso?</option>
+                                <option value="NAME_TEACHER"> ¿Cuál era el apellido de tu profesora de tercero de primaria?</option>
+                                <option value="NAME_FRIEND"> ¿Cuál era el nombre de pila de tu mejor amigo de la infancia?</option>
                         </select>
                     </div>
                     <div class="plantilla-datos">
-                        <label for="inDireccion" class="dato-titulo">#####</label>
-                        <input type="text" id="inDireccion" placeholder="#####" class ="estilo-input" optional>
+                        <label for="inRespuesta2" class="dato-titulo">Respuesta</label>
+                        <input type="password" id="inRespuesta2" class ="estilo-input" required>
+                    </div>
+                    <div class="plantilla-datos">
+                        <label for="inPregunta3" class="dato-titulo">Pregunta de Seguridad</label>
+                        <select name ="pregunta-3" id="inPregunta3"  class ="estilo-input" required>
+                                <option value="NAME_MASCOT"> ¿Cuál era el nombre de tu primera mascota?</option>
+                                <option value="NAME_NICKNAME"> ¿Cuál era tu apodo de infancia?</option>
+                                <option value="NAME_CLUB"> ¿De qué club de fútbol eras simpatizante?</option>
+                        </select>
+                    </div>
+                    <div class="plantilla-datos">
+                        <label for="inRespuesta3" class="dato-titulo">Respuesta</label>
+                        <input type="password" id="inRespuesta3" class ="estilo-input" required>
                         <input type="submit" value="Confirmar" class="boton-info">
                     </div>
                 </form>
