@@ -157,7 +157,7 @@ input.placeholder{
     text-align: center;
 }
 
-/* Botones submit y editar */
+/* Botones submit, editar y cambiar contraseña*/
 
 .boton-info{
     padding: 2px;
@@ -170,7 +170,10 @@ input.placeholder{
 .boton-info:hover{
     background-color: #476387;
     transition: 0.2s ease;
-    color: #fbf4e8;
+}
+
+#cambiar-contraseña{
+    margin-left: 0;
 }
 
 /* Editor de info del usuario */
@@ -219,6 +222,7 @@ input.placeholder{
     position: absolute;
     margin-left: 1%;
 }
+
 
 
 /* ####################################################################################################### */
