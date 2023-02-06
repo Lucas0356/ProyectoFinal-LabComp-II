@@ -180,6 +180,10 @@ input.placeholder{
 
 /* Editor de info del usuario */
 
+.boton-info-datos{
+    margin-left: 5%;
+}
+
 #editor-info-personal{
     display: none;
 }
