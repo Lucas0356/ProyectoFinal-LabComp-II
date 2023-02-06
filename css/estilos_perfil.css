@@ -97,6 +97,8 @@ div.user-detalles{
     margin: 5px;
     width: 50%;
     height: 98%;
+    display: flex;
+    flex-direction: column;
 }
 
 h4.user-detalles-titulo{
@@ -110,8 +112,8 @@ h4.user-detalles-titulo{
 
 .plantilla-datos{
     display: flex;
-    font-size: 17px;
-    padding: 15px;
+    font-size: 16px;
+    padding: 14px;
 }
 
 .plantilla-datos p.dato-titulo{
@@ -160,21 +162,21 @@ input.placeholder{
 /* Botones submit, editar y cambiar contraseña*/
 
 .boton-info{
-    padding: 2px;
-    margin-left: auto;
+    align-self: flex-end;
+    margin-top: auto;
+    padding: 4px;
     background-color: #273b55;
     color: #fbf4e8;
+    border: 2px solid transparent;
     cursor: pointer;
 }
 
 .boton-info:hover{
     background-color: #476387;
+    border: 2px solid black;
     transition: 0.2s ease;
 }
 
-#cambiar-contraseña{
-    margin-left: 0;
-}
 
 /* Editor de info del usuario */
 
@@ -221,6 +223,11 @@ input.placeholder{
     cursor: pointer;
     position: absolute;
     margin-left: 1%;
+}
+
+div.user-detalles form{
+    display: flex;
+    flex-direction: column;
 }
 
 
