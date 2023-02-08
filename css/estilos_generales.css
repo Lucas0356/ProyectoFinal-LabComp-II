@@ -97,7 +97,7 @@ nav.menu button.boton-menu:hover {
     position: fixed; /* Posición fija */
     width: 200px; /* Ancho */
     background-color: #273b55;
-    right: -500px; /* Debido a que el ancho es de 200px, con esto ocultaremos la barra lateral */
+    right: -200px; /* Debido a que el ancho es de 200px, con esto ocultaremos la barra lateral */
     transition: all 500ms linear;
 }
 
@@ -129,7 +129,6 @@ nav.menu button.boton-menu:hover {
 
 #sidebar {
     position: fixed; /* Posición fija */
-    z-index: 1;
     height: 100%; /* Altura */
     width: 217px;
     background-color: #273b55;
