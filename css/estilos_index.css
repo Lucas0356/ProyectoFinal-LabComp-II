@@ -54,6 +54,10 @@ Autores: Lucas Moltedo - Martín Reser
     color: #ffffff;
     flex-grow: 1;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 div.plantilla-widget:last-child{
@@ -125,22 +129,22 @@ div.plantilla-widget:last-child{
 .texto-secundario {
     font-size: 13px;
 }
-/* Estilos stock productos */
+
+/* Diseños para el widget de stock de productos */
+
+#stock-widget {
+    padding: 5px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
 
 #stockProductos img {
     min-width: 50px;
     max-width: 150px;
 }
 
-/* Diseños para el widget de stock de productos */
-#stock-widget {
-    padding: 5px;
-    display: flex;
-    align-items: center;
-}
-
 .productos-widget {
-    margin-left: auto;
     text-align: end;
 }
 
@@ -389,21 +393,35 @@ div.plantilla-widget:last-child{
 
 /* ESTILOS PANTALLAS ALTURAS SUPERIORES A 800 */
 
-@media screen and (min-height: 800px){
-    /* ESTILOS Configurar dashboard - barra izquierda*/
-    #content{
-        height: 100%;
-        justify-content: space-around;
+@media screen and (min-height: 900px){
+    /* ESTILOS CONTENTIDO PRINCIPAL MAIN*/
+    .plantilla-widget{
+        flex: 1 1 30%;
     }
-    .plantilla-widget {
-        display: flex;
-        flex-direction: column;
-        flex: 0 0 48%;
+    /* ESTILOS BARRA SECUNDARIA */
+    #barra-secundaria div h4{
+        padding: 15px 10px; /* Espaciado, 15 arriba y abajo, 10 a los lados */
     }
-    div.plantilla-widget:last-child{
-        max-width: none;
+    #barra-secundaria div ul li {
+        margin-bottom: 18%;
+        margin-top: 18%;
     }
-} 
+    #barra-secundaria div ul li img{
+        width: 140px;
+        height: 140px;
+    }
+    /* ESTILOS MENU DASHBOARD */
+    #menu-dashboard{
+        min-width: 212px;
+    }
+    #menu-dashboard form h3{
+        padding: 15px 10px; /* Espaciado, 15 arriba y abajo, 10 a los lados */
+    }
+    #menu-dashboard form p label{
+        padding: 18px 10px; /* Espaciado, 18 arriba y abajo, 10 a los lados */
+    }
+}
+
 
 /* ####################################################################################################### */
 /* ####################################################################################################### */

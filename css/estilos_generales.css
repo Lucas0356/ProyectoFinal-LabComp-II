@@ -198,7 +198,6 @@ div.sidebar-button span:hover {
 
 body{
     background-color:#273b55;
-    height: 100%;
     padding-top: 90px; /* El relleno es igual a la altura del encabezado para que no lo tape */
     display: flex;
 }
