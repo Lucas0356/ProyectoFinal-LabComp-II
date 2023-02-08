@@ -172,19 +172,22 @@
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Address</p>
                     <p class="dato-texto">Viamonte 276</p>
-                    <button type="button" class="boton-info" id="boton-editar-personal" >Edit</button>
                 </div>
+                <button type="button" class="boton-info" id="boton-editar-personal" >Edit</button>
             </div>
+
             <!-- info seguridad -->
             <div class="user-detalles" id="info-seguridad">
-                <h4 class="user-detalles-titulo">Security</h4>
+                <h4 class="user-detalles-titulo">Privacy and Security</h4>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Security Questions</p>
                     <p class="dato-texto">Yes</p>
+                    <button type="button" class="boton-info boton-info-datos">Disable</button>
                 </div>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">2 Step Verification</p>
                     <p class="dato-texto">No</p>
+                    <button type="button" class="boton-info boton-info-datos">Active</button>
                 </div>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Backup E-mail</p>
@@ -192,14 +195,16 @@
                 </div>
                 <div class="plantilla-datos">
                     <p class="dato-titulo">Devices with account access</p>
-                    <p class="dato-texto">Samsung Galaxy S20 - Notebook HP Pavilion</p>
+                    <p class="dato-texto">3 devices with access</p>
+                    <button type="button" class="boton-info boton-info-datos">See list</button>
                 </div>
                 <div class="plantilla-datos">
-                    <p class="dato-titulo">Backup E-mail</p>
-                    <p class="dato-texto">juancito2@gmail.com</p>
-                    <button type="button" class="boton-info" id="boton-editar-seguridad" >Edit</button>
+                    <p class="dato-titulo">Password</p>
+                    <button type="button" class="boton-info" id="cambiar-contraseña">Change password</button>
                 </div>
+                <button type="button" class="boton-info" id="boton-editar-seguridad" >Edit</button>
             </div>
+
             <!-- Editar info personal -->
             <div id="editor-info-personal" class="user-detalles">
                 <div class="header-editar-info">
@@ -254,10 +259,11 @@
                     <div class="plantilla-datos">
                         <label for="inDireccion" class="dato-titulo">Address</label>
                         <input type="text" id="inDireccion" placeholder="Calle y número" class ="estilo-input" optional>
-                        <input type="submit" value="Confirmar" class="boton-info">
                     </div>
+                    <input type="submit" value="Confirm" class="boton-info">
                 </form>
             </div>
+
             <!-- Editar info seguridad -->
             <div id="editor-info-seguridad" class="user-detalles">
                 <div class="header-editar-info">
@@ -303,9 +309,9 @@
                     <div class="plantilla-datos">
                         <label for="inRespuesta3" class="dato-titulo">Answer*</label>
                         <input type="password" id="inRespuesta3" class ="estilo-input" placeholder ="Here goes your answer" required>
-                        <input type="submit" value="Confirmar" class="boton-info" >
                     </div>
                     <p> All fields marked with an * are required fields.</p>
+                    <input type="submit" value="Confirm" class="boton-info">
                 </form>
             </div>
         </main>
