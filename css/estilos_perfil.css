@@ -13,7 +13,6 @@ Autores: Lucas Moltedo - Martín Reser
 aside.lateral-izquierdo{
     background-color: #273b55;
     width: 13%;
-    height: 90%;
 }
 
 .user-perfil{
@@ -64,8 +63,11 @@ div.menu-opciones ul li p{
 /* Estilos body */
 
 body{
+    display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    position: relative;
+    padding-bottom: 98px;
+    min-height: 100vh;
 }
 
 /* ####################################################################################################### */
@@ -78,7 +80,6 @@ main {
     background-color: #fbf4e8;
     width: 87%;
     display: flex;
-    align-items: center;
 }
 
 /* Detalles del usuario */
@@ -118,7 +119,7 @@ h4.user-detalles-titulo{
 
 .plantilla-datos p.dato-titulo{
     font-weight: bold;
-    width: 35%;
+    width: 40%;
 }
 
 .plantilla-datos a.editar{
@@ -162,8 +163,8 @@ input.placeholder{
 /* Botones submit y editar */
 
 .boton-info{
-    align-self: flex-end;
     margin-top: auto;
+    align-self: flex-end;
     padding: 4px;
     background-color: #273b55;
     color: #fbf4e8;
@@ -189,7 +190,7 @@ input.placeholder{
 
 #editor-info-personal.active{
     display: block;
-    width: 50%;
+    min-width: 50%;
 }
 
 #editor-info-seguridad{
@@ -198,7 +199,7 @@ input.placeholder{
 
 #editor-info-seguridad.active{
     display: block;
-    width: 50%;
+    min-width: 50%;
 }
 
 .plantilla-datos label.dato-titulo{
@@ -231,6 +232,7 @@ input.placeholder{
 div.user-detalles form{
     display: flex;
     flex-direction: column;
+    height: 92%;
 }
 
 
@@ -241,6 +243,9 @@ div.user-detalles form{
 /* Estilos footer */
 
 footer{
+    position: absolute;
+    height: 98px;
+    bottom: 0;
     width: 100%;
 }
 
@@ -272,3 +277,51 @@ footer{
     font-size: 25px;
 }
 
+/* ####################################################################################################### */
+/* ####################################################################################################### */
+/* ####################################################################################################### */
+
+/* ESTILOS PANTALLAS ANCHO MENOR A 1150px */
+
+@media screen and (max-width: 1150px){
+    /* ESTILOS CONTENTIDO PRINCIPAL MAIN*/
+    main{
+        flex-direction: column;
+    }
+    div.user-detalles{
+        width: 99%;
+    }
+    aside.lateral-izquierdo{
+        min-width: 165px;
+    }
+    body{
+        flex-wrap: nowrap;
+    }
+}
+
+/* ####################################################################################################### */
+/* ####################################################################################################### */
+/* ####################################################################################################### */
+
+/* ESTILOS PANTALLAS ANCHO MENOR A 620px */
+
+@media screen and (max-width: 620px){
+    /* ESTILOS BODY*/
+    body{
+        flex-direction: column;
+    }
+    /* ESTILOS CONTENTIDO PRINCIPAL MAIN*/
+    main{
+        width: 99%;
+    }
+    div.user-detalles{
+        width: 99%;
+    }
+    /* ESTILOS ASIDE */
+    aside.lateral-izquierdo{
+        width: 100%;
+    }
+    div.user-perfil{
+        max-width: 100%;
+    }
+}

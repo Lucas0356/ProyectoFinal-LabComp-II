@@ -312,7 +312,7 @@ div.plantilla-widget:last-child{
     width: 25px;
 }
 
-/* Definimos la altura de los gráficos de la semana de e-commerce */
+/* Definimos la altura de los gráficos de las interacciones en redes */
 
 .semana-barra-redes[id="redes-lunes"]{
     height: 50px;

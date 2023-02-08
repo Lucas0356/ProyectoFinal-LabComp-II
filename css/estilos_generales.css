@@ -129,6 +129,7 @@ nav.menu button.boton-menu:hover {
 
 #sidebar {
     position: fixed; /* Posición fija */
+    z-index: 1;
     height: 100%; /* Altura */
     width: 217px;
     background-color: #273b55;
