@@ -13,6 +13,7 @@ Autores: Lucas Moltedo - Martín Reser
 #menu-dashboard {
     background-color: #273b55;
     color: #fbf4e8;
+    min-width: 217px;
     width: 20%; /* Ancho */
 }
 
@@ -25,12 +26,12 @@ Autores: Lucas Moltedo - Martín Reser
 #menu-dashboard form p label{
     border-top: 1px solid #476387;
     width: 100%;
-    padding: 5px 10px; /* Espaciado, 5 arriba y abajo, 10 a los lados */
+    padding: 6px 10px; /* Espaciado, 5 arriba y abajo, 10 a los lados */
     display: inline-block;
 }
 
 #menu-dashboard form p label input{
-    margin-left: 85%;
+    margin-left: 90%;
 }
 
 /* ####################################################################################################### */
