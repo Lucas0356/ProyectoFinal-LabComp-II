@@ -26,7 +26,7 @@ Autores: Lucas Moltedo - Martín Reser
 #menu-dashboard form p label{
     border-top: 1px solid #476387;
     width: 100%;
-    padding: 6px 10px; /* Espaciado, 5 arriba y abajo, 10 a los lados */
+    padding: 6px 10px; /* Espaciado, 6 arriba y abajo, 10 a los lados */
     display: inline-block;
 }
 
